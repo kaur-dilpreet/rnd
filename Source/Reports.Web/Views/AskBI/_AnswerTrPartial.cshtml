@@ -1,0 +1,7 @@
+﻿@model List<Reports.Core.Domain.Models.GenAIAnswerModel>
+
+@foreach (var question in Model)
+{
+    @Html.Partial("_AnswerTrRowPartial", question)
+}
+    

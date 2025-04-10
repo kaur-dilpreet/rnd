@@ -1,0 +1,10 @@
+<INFO > 
+    <date>2024-02-12 13:12:41,469</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-02-12 13:45:47,379</date> 
+    <thread>51</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

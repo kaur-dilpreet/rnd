@@ -1,0 +1,13 @@
+﻿@model List<Reports.Core.Domain.Models.AskBIQuestion>
+
+<h3>History</h3>
+<ul>
+    @foreach (var question in Model)
+    {
+        <li class="question">
+            <div class="questionText">
+                @question.Question
+            </div>
+        </li>
+    }
+</ul>

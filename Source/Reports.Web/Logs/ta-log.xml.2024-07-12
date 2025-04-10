@@ -1,0 +1,495 @@
+<INFO > 
+    <date>2024-07-12 08:30:30,111</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-07-12 08:32:57,459</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-12 08:45:56,740</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 03:45:56 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi/createticket</errorPath>
+    <rawUrl>/askbi/createticket?Length=5</rawUrl>
+    <className>BLL.SharePointProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userEmail"><![CDATA[stepanian@hpe.com]]></param>
+        <param name="title"><![CDATA[ASK BI]]></param>
+        <param name="source"><![CDATA[AskBI]]></param>
+        <param name="question"><![CDATA[What is the CTOR for Email ENT Newsletter for the fiscal year FY24?]]></param>
+        <param name="answer"><![CDATA[I was unable to find data to answer your question. Please rephrase your question and try again.]]></param>
+        <param name="creationDateTime"><![CDATA[7/12/2024 3:45:38 PM]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.SharePointProvider.CreateTicket(String userEmail, String title, String source, String question, String answer, DateTime creationDateTime, String issueDescription) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\SharePointProvider.cs:line 72
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-12 13:50:04,476</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-12 14:24:58,637</date> 
+    <thread>75</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:24:58 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>ORDER BY items must appear in the select list if SELECT DISTINCT is specified.</message>
+    <source>.Net SqlClient Data Provider</source>
+    <targetSite>Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:25:22,658</date> 
+    <thread>75</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:25:22 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>ORDER BY items must appear in the select list if SELECT DISTINCT is specified.</message>
+    <source>.Net SqlClient Data Provider</source>
+    <targetSite>Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:25:27,522</date> 
+    <thread>75</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:25:27 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>could not execute query
+[ select distinct askbihisto0_.Question as col_0_0_, askbihisto0_.TableCategory as col_1_0_ from AskBIHistory askbihisto0_ where askbihisto0_.CreatedBy=@p0 order by askbihisto0_.CreationDateTime desc OFFSET @p1 ROWS FETCH FIRST @p2 ROWS ONLY ]
+  Name:p1 - Value:1 [Type: NHibernate.Type.Int64Type (SqlType: Int64)]  Name:p2 - Value:0 [Type: NHibernate.Type.Int32Type (SqlType: Int32)]  Name:p3 - Value:10 [Type: NHibernate.Type.Int32Type (SqlType: Int32)]
+[SQL: select distinct askbihisto0_.Question as col_0_0_, askbihisto0_.TableCategory as col_1_0_ from AskBIHistory askbihisto0_ where askbihisto0_.CreatedBy=@p0 order by askbihisto0_.CreationDateTime desc OFFSET @p1 ROWS FETCH FIRST @p2 ROWS ONLY]</message>
+    <source>NHibernate</source>
+    <targetSite>System.Collections.IList DoList(NHibernate.Engine.ISessionImplementor, NHibernate.Engine.QueryParameters, NHibernate.Transform.IResultTransformer, NHibernate.Cache.QueryCacheResultBuilder)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces)
+   at NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results, Object filterConnection)
+   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   at NHibernate.Impl.AbstractSessionImpl.List[T](IQueryExpression query, QueryParameters parameters)
+   at NHibernate.Impl.AbstractQueryImpl2.List[T]()
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip)
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+    ]]></innerExceptionStackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:25:27,522</date> 
+    <thread>75</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:25:27 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>could not execute query
+[ select distinct askbihisto0_.Question as col_0_0_, askbihisto0_.TableCategory as col_1_0_ from AskBIHistory askbihisto0_ where askbihisto0_.CreatedBy=@p0 order by askbihisto0_.CreationDateTime desc OFFSET @p1 ROWS FETCH FIRST @p2 ROWS ONLY ]
+  Name:p1 - Value:1 [Type: NHibernate.Type.Int64Type (SqlType: Int64)]  Name:p2 - Value:0 [Type: NHibernate.Type.Int32Type (SqlType: Int32)]  Name:p3 - Value:10 [Type: NHibernate.Type.Int32Type (SqlType: Int32)]
+[SQL: select distinct askbihisto0_.Question as col_0_0_, askbihisto0_.TableCategory as col_1_0_ from AskBIHistory askbihisto0_ where askbihisto0_.CreatedBy=@p0 order by askbihisto0_.CreationDateTime desc OFFSET @p1 ROWS FETCH FIRST @p2 ROWS ONLY]</message>
+    <source>NHibernate</source>
+    <targetSite>System.Collections.IList DoList(NHibernate.Engine.ISessionImplementor, NHibernate.Engine.QueryParameters, NHibernate.Transform.IResultTransformer, NHibernate.Cache.QueryCacheResultBuilder)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces)
+   at NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results, Object filterConnection)
+   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   at NHibernate.Impl.AbstractSessionImpl.List[T](IQueryExpression query, QueryParameters parameters)
+   at NHibernate.Impl.AbstractQueryImpl2.List[T]()
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip)
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(DbCommand st, QueryParameters queryParameters, ISessionImplementor session, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer, QueryCacheResultBuilder queryCacheResultBuilder)
+    ]]></innerExceptionStackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-12 14:44:22,451</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-12 14:45:09,389</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:45:09 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select x001 ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:45:26,175</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:45:26 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select x001 ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:45:31,026</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:45:31 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select x001 ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:45:31,026</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:45:31 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select x001 ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-12 14:45:36,625</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:45:36 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select x001 ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-12 14:48:23,598</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-12 14:48:32,458</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/12/2024 09:48:32 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>DABLLTA.AskBIProvider</className>
+    <methodName>GetAskBIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>query ( query ( select_from ( from ( range Reports.Core.Domain.Entities.AskBIHistory x001 ) ) ( select ( . x001 Question ) ( . x001 TableCategory ) ) ) ( where ( == ( . x001 CreatedBy ) ( : p1 ) ) ) ( group by ( . x001 Question ) ( . x001 TableCategory ) ) ( order by ( . x001 CreationDateTime ) desc ) ( skip ( : p2 ) ) ( take ( : p3 ) ) )</message>
+    <source>NHibernate</source>
+    <targetSite>System.String GetClassName(NHibernate.Hql.Ast.ANTLR.Tree.IASTNode)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.GetClassName(IASTNode querySource)
+   at NHibernate.Hql.Ast.ANTLR.PolymorphicQuerySourceDetector.Process(IASTNode tree)
+   at NHibernate.Hql.Ast.ANTLR.AstPolymorphicProcessor.Process()
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, IASTNode ast, String queryIdentifier, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory.CreateQueryTranslators(IQueryExpression queryExpression, String collectionRole, Boolean shallow, IDictionary`2 filters, ISessionFactoryImplementor factory)
+   at NHibernate.Engine.Query.QueryPlanCache.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow, IDictionary`2 enabledFilters)
+   at NHibernate.Impl.AbstractSessionImpl.GetHQLQueryPlan(IQueryExpression queryExpression, Boolean shallow)
+   at NHibernate.Impl.AbstractSessionImpl.CreateQuery(IQueryExpression queryExpression)
+   at NHibernate.Linq.DefaultQueryProvider.PrepareQuery(Expression expression, IQuery& query)
+   at NHibernate.Linq.DefaultQueryProvider.ExecuteList[TResult](Expression expression)
+   at NHibernate.Linq.NhQueryable`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Reports.BLL.Providers.AskBIProvider.GetAskBIModel(Int64 userId, Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\AskBIProvider.cs:line 46
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-12 14:49:17,451</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-07-12 14:50:09,504</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

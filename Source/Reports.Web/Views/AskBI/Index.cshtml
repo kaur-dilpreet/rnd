@@ -1,0 +1,103 @@
+﻿@model Reports.Core.Domain.Models.AskBIModel
+
+@{
+    ViewBag.Title = "Ask BI";
+    ViewBag.Subtitle = String.Empty;
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/AskBI")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/AskBI")
+}
+
+@section FooterText
+{
+    <div class="poweredBy">
+        Powered by Marketing Analytics
+    </div>
+}
+
+<div class="adminPage" id="askBIPage">
+    @if (!String.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="errorMessage">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        <div class="modelVersion">
+            <div class="row">
+                <span class="tutorialLink"><a href="~/Content/Docs/askbi-user-guide.pdf" target="_blank">How To Use Tutorial</a></span>
+            </div>
+            @if (Model.Version != null)
+            {
+                <div class="row">
+                    <label>Name:</label><span>@Model.Version.Name</span>
+                </div>
+                <div class="row">
+                    <label>Release Version:</label><span>@Model.Version.ReleaseVersion</span>
+                </div>
+                if (Model.Version.DataUntilDates != null)
+                {
+                    <h3>Data Availability</h3>
+                    foreach (var untilDate in Model.Version.DataUntilDates)
+                    {
+                    <div class="row">
+                        <label>@untilDate.Source:</label><span>@untilDate.Date</span>
+                    </div>
+                    }
+                }
+            }
+        </div>
+        <div id="askBIDialog" class="ovDialog twoColumnForm">
+            @using (Ajax.BeginForm("AskQuestion", "AskBI", new AjaxOptions
+            {
+                HttpMethod = "POST",
+                OnBegin = "bms.formBegin('frmAskBI')",
+                OnComplete = "bms.frmAskBIComplete(xhr, 'frmAskBI')"
+            },
+
+                    new { id = "frmAskBI" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="formRow">
+                    <div class="textBox" id="divQuestion">
+                        @Html.LabelFor(m => m.Question)
+                        @Html.TextBoxFor(m => m.Question)
+                        @Html.ValidationMessageFor(m => m.Question)
+                    </div>
+                    <div class="textBox" id="divCategory">
+                        @Html.LabelFor(m => m.Category)
+                        @Html.DropDownListFor(m => m.Category, new SelectList(Model.Version.TableCategories, "Auto"))
+                        @Html.ValidationMessageFor(m => m.Category)
+                        @Html.HiddenFor(m => m.SessionId)
+                        <input type="submit" class="primaryButton" value="Submit" />
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="answers">
+            <div class="showSQLQueriesCheckbox">
+                <input type="checkbox" id="showSQLQueries" /> <label>Show SQL Queries</label>
+            </div>
+            <div class="answersWrapper scrollbar-outer">
+
+            </div>
+        </div>
+
+        <div class="historyWrapper scrollbar-outer">
+            <h3>Recent Questions</h3>
+            <div class="histories">
+                @Html.Partial("_HistoryTrPartial", Model.History)
+            </div>
+            @*<input type="button" class="primaryButton" id="loadMore" value="LoadMore" />*@
+        </div>
+    }
+</div>

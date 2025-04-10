@@ -1,0 +1,296 @@
+﻿@model Reports.Core.Domain.Models.CMOChatQuestion
+
+<div class="questionContainer card @(Model.IsCorrect.HasValue && !Model.IsCorrect.Value ? "notCorrect" : String.Empty)" data-uniqueid="@Model.UniqueId">
+    <div class="questionDateTime">
+        @Html.Partial("_DatePartial", new Reports.Core.Domain.Models.DateModel(Model.CreationDateTime, true))
+    </div>
+    <div class="question">
+        <h3>Question:</h3>
+        @Model.Question
+    </div>
+    @{
+        List<String> colors = new List<String>() { "#2cbce3", "#c140ff", "#fec901", "#32dac8", "#ac82f2" };
+    }
+    @if (!String.IsNullOrEmpty(Model.Answer))
+    {
+        <div class="answer">
+            <h3>Answer:</h3>
+
+            @if (Model.ResponseType == "table")
+            {
+            <div class="answerText">@(new MvcHtmlString(Model.NLText.Replace(System.Environment.NewLine, "<br />").Replace("\n", "<br />").Replace("\\n", "<br />").Replace("\r", String.Empty).Replace("\\r", String.Empty)))</div>
+                <br />
+
+                Boolean showDollarSign = false;
+                List<List<object>> table = Reports.Core.Utilities.Utilities.DeserializeStatic<List<List<object>>>(Model.Answer);
+
+                if (table.Count > 2 && table[0].Count > 1)
+                {
+                    if (table[1][0].GetType() == typeof(String))
+                    {
+                        String chartType = "bar";
+                        String title2 = String.Empty;
+
+                        List<String> categories = new List<String>();
+
+                        Reports.Core.Domain.Models.MultiColumnChartDataSeriesModel dataSeries = new Reports.Core.Domain.Models.MultiColumnChartDataSeriesModel()
+                        {
+                            Items = new List<Reports.Core.Domain.Models.MultiColumnChartDataSeries>()
+                        };
+
+                        for (Int32 i = 1; i < table.Count; i++)
+                        {
+                            categories.Add(table[i][0].ToString());
+                        }
+
+                        for (Int32 j = 1; j < table[0].Count; j++)
+                        {
+                            if (table[1][j].GetType() == typeof(double))
+                            {
+                                dataSeries.Items.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSeries()
+                                {
+                                    Name = table[0][j].ToString()
+                                });
+                            }
+                            else if (table[1][j].ToString().Trim().StartsWith("$"))
+                            {
+                                dataSeries.Items.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSeries()
+                                {
+                                    Name = table[0][j].ToString()
+                                });
+
+                                showDollarSign = true;
+                            }
+                            else if (table[1][j].ToString().Trim().EndsWith("%"))
+                            {
+                                dataSeries.Items.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSeries()
+                                {
+                                    Name = table[0][j].ToString()
+                                });
+
+                                title2 = table[0][j].ToString();
+                                chartType = "column";
+                            }
+                        }
+
+                        for (Int32 i = 1; i < table.Count; i++)
+                        {
+                            Int32 index = 0;
+                            Int32 colorIndex = 0;
+
+                            for (Int32 j = 1; j < table[i].Count; j++)
+                            {
+                                if (table[1][j].GetType() == typeof(double))
+                                {
+                                    float value;
+
+                                    if (float.TryParse(table[i][j].ToString(), out value))
+                                    {
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = value,
+                                            Color = colors[colorIndex++]
+                                        });
+                                    }
+                                    else
+                                    {
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = 0,
+                                            Color = colors[colorIndex++]
+                                        });
+                                    }
+
+                                    index++;
+                                }
+                                else if (table[1][j].ToString().Trim().EndsWith("%"))
+                                {
+                                    float value;
+
+                                    if (float.TryParse(table[i][j].ToString().Trim(new char[] { '%', ' ' }), out value))
+                                    {
+                                        dataSeries.Items[index].yAxis = 2;
+                                        dataSeries.Items[index].SerieType = "spline";
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = value,
+                                            Color = colors[colorIndex++]
+                                        });
+                                    }
+                                    else
+                                    {
+                                        dataSeries.Items[index].yAxis = 2;
+                                        dataSeries.Items[index].SerieType = "spline";
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = 0,
+                                            Color = "#ff8300"
+                                        });
+                                    }
+
+                                    index++;
+                                }
+                                else if (table[1][j].ToString().Trim().StartsWith("$"))
+                                {
+                                    float value;
+
+                                    if (float.TryParse(table[i][j].ToString().Trim(new char[] { '$', ' ' }).Replace(",", String.Empty), out value))
+                                    {
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = value,
+                                            Color = colors[colorIndex++],
+                                        });
+                                    }
+                                    else
+                                    {
+                                        dataSeries.Items[index].Values.Add(new Reports.Core.Domain.Models.MultiColumnChartDataSerieValue()
+                                        {
+                                            Value = 0,
+                                            Color = colors[colorIndex++]
+                                        });
+                                    }
+
+                                    index++;
+                                }
+
+                                if (colorIndex >= colors.Count)
+                                {
+                                    colorIndex = 0;
+                                }
+                            }
+                        }
+
+                        Reports.Core.Domain.Models.MultiColumnChartModel chartModel = new Reports.Core.Domain.Models.MultiColumnChartModel()
+                        {
+                            Title = String.Empty,
+                            SubTitle = String.Empty,
+                            ContainerId = String.Format("Bar_{0}", Guid.NewGuid().ToString().Replace("-", "_")),
+                            ChartType = chartType,
+                            PaddingRight = 20,
+                            PaddingBottom = 20,
+                            PaddingLeft = 20,
+                            PaddingTop = 20,
+                            ShowLegend = true,
+                            LegendAlign = "center",
+                            LegendVerticalAlign = "bottom",
+                            LegendLayout = "horizontal",
+                            ShowSubTitle = false,
+                            ShowTitle = false,
+                            YAxis1Title = String.Empty,
+                            YAxis2Title = title2,
+                            YAxis2LabelFormat = "{value}%",
+                            HideYAxis = false,
+                            Categories = categories,
+                            LegendY = 36,
+                            HideGridLines = true,
+                            BorderWidth = 0,
+                            BorderColor = "#ffffff",
+                            PlotShadow = false,
+                            ShowDataLabels = true,
+                            DataLabelColor = "#808285",
+                            XAxisColor = "#808285",
+                            YAxisColor = "#808285",
+                            HasFilter = false,
+                            DataSeries = dataSeries,
+                            ChartWidth = 760,
+                            ChartHeight = chartType == "column" ? 400 : categories.Count * 40,
+                            PointWidth = categories.Count > 20 ? 5 : 10,
+                            ShowDollarSign = showDollarSign
+                        };
+
+                        <div class="chart">
+                            @Html.Partial("_MultiColumnChartPartial", chartModel)
+
+                        </div>
+                    }
+                }
+                <div class="tableActions">
+                    @{
+                        Guid uniqueId = Guid.NewGuid();
+                    }
+                    <div class="rbcontextmenuBtn" data-menuid="@String.Format("contextmenu-{0}", uniqueId)"><a href="#">...</a></div>
+                    <div class="rbcontextmenu" id="@String.Format("contextmenu-{0}", uniqueId)">
+                        <ul class="contextMenu">
+                            <li>
+                                <a href="#" class="exportToCSV">Export to CSV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            @for (Int32 j = 0; j < table[0].Count; j++)
+                            {
+                                <th>@table[0][j].ToString()</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (Int32 i = 1; i < table.Count; i++)
+                        {
+                            <tr>
+                                @for (Int32 j = 0; j < table[i].Count; j++)
+                                {
+                                    if (table[i][j].GetType() == typeof(Double))
+                                    {
+                                        <td class="number">@String.Format("{0:#,##0}", (Double)table[i][j])</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@table[i][j].ToString()</td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                Double value = 0;
+
+                <div class="answerValue">
+                    <span class="answerText">@(new MvcHtmlString(Model.NLText.Replace(System.Environment.NewLine, "<br />").Replace("\n", "<br />").Replace("\\n", "<br />").Replace("\r", String.Empty).Replace("\\r", String.Empty)))</span>
+                    @*<span style="font-weight: bold;">
+                            @if (Double.TryParse(Model.Answer, out value))
+                            {
+                                @String.Format("{0:#,##0}", (Double)value)
+                            }
+                            else
+                            {
+                                @Model.Answer
+                            }
+                        </span>*@
+                </div>
+            }
+            <br />
+            <div class="answerText" style="font-style: italic;">@Model.DateText</div>
+        </div>
+
+        if (!String.IsNullOrEmpty(Model.SQL))
+        {
+            <div class="sqlQuery">
+                <h3>SQL:</h3>
+                @Model.SQL
+            </div>
+        }
+
+        <div class="isCorrect">
+            <br />
+            <label>Is the result correct? </label>
+            <input type="radio" name="isCorrect_@Model.UniqueId" value="true" @(Model.IsCorrect.HasValue ? Model.IsCorrect.Value ? "checked" : String.Empty : String.Empty) /> Yes
+            <input type="radio" name="isCorrect_@Model.UniqueId" value="false" @(Model.IsCorrect.HasValue ? !Model.IsCorrect.Value ? "checked" : String.Empty : String.Empty) /> No
+        </div>
+
+        if (!Model.TicketOpened)
+        {
+            <div class="createTicketContainer">
+                <input type="button" class="primaryButton createTicket" value="Create Ticket" />
+            </div>
+        }
+    }
+
+</div>
+        

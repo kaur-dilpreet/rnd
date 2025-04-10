@@ -1,0 +1,389 @@
+<INFO > 
+    <date>2023-08-14 07:58:03,292</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-14 08:01:15,876</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692025222361</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-14 08:03:25,906</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-14 08:12:10,561</date> 
+    <thread>33</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/verticaconnectionform</errorPath>
+    <rawUrl>/mart/verticaconnectionform?uniqueId=&_=1692025916555</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 08:12:55,953</date> 
+    <thread>29</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/verticaconnectionform</errorPath>
+    <rawUrl>/mart/verticaconnectionform?hasTableName=false&_=1692025951273</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-14 08:44:57,458</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 09:03:27,896</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 09:25:31,788</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 10:41:48,206</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 10:43:20,517</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:03:31,223</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-14 11:05:37,799</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/verticaconnectionform</errorPath>
+    <rawUrl>/mart/verticaconnectionform?hasTableName=false&_=1692036329683</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 11:06:50,862</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform?uniqueId=00000000-0000-0000-0000-000000000000&connections%5B0%5D%5BKey%5D=d771aa49-a5fd-4f05-afee-67932714d1bf&connections%5B0%5D%5BValue%5D=%0A++++%0A++++++++Vertica+-+shr2_vrt_pro%0A++++%0A++++...%0A++++%0A++++++++%0A++++++++++++%0A++++++++++++++++Edit%0A++++++++++++%0A++++++++++++%0A++++++++++++++++Delete%0A++++++++++++%0A++++++++%0A++++%0A&connectionId=00000000-0000-0000-0000-000000000000&_=1692036378054</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-14 11:32:13,232</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:40:19,914</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:43:23,514</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:45:30,644</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:50:06,991</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:54:24,568</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 11:55:18,071</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 12:02:21,050</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-14 12:09:31,913</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-14 12:11:52,355</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 477
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:11:52,374</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 477
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:13:03,675</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 477
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:15:40,267</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:15:56,953</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:15:57,203</date> 
+    <thread>44</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:17:17,937</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Schema "CDR_P_Bus_Sum" does not exist</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:17:23,668</date> 
+    <thread>32</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Schema "CDR_P_Bus_Sum" does not exist</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:17:23,704</date> 
+    <thread>15</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Schema "CDR_P_Bus_Sum" does not exist</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:17:24,752</date> 
+    <thread>12</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Schema "CDR_P_Bus_Sum" does not exist</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-14 12:26:07,586</date> 
+    <thread>48</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>

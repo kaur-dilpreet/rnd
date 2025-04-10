@@ -1,0 +1,85 @@
+<INFO > 
+    <date>2023-08-30 09:33:01,461</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-30 09:50:26,366</date> 
+    <thread>27</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ";"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.DataEngine.VQueryExecutor HandleNonPrepared(System.String, System.String, Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VDataEngine.HandleNonPrepared(String sqlQuery, String name, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-30 09:55:27,907</date> 
+    <thread>50</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near "GROUP"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-30 09:56:22,466</date> 
+    <thread>15</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near "WHERE"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-30 09:58:59,230</date> 
+    <thread>26</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near "WHERE"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>

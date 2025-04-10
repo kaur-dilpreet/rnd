@@ -1,0 +1,2 @@
+﻿CONNECT TO VERTICA shr4_vrt_pro_005 USER srvc_pro_b2b_adr PASSWORD 'H3w3l3tt001!' ON 'shr4-vrt-pro-005.houston.hpecorp.net',5433;
+DISCONNECT shr4_vrt_pro_005;

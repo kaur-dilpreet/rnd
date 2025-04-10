@@ -1,0 +1,262 @@
+<INFO > 
+    <date>2024-07-03 08:47:37,053</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-03 08:49:20,744</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 03:49:20 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Value cannot be null.
+Parameter name: items</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>Void .ctor(System.Collections.IEnumerable, System.String, System.String, System.String, System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.MultiSelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, String dataGroupField, IEnumerable selectedValues, IEnumerable disabledValues, IEnumerable disabledGroups)
+   at System.Web.Mvc.SelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, Object selectedValue)
+   at ASP._Page_Views_mart__DataSourcePartial_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\_DataSourcePartial.cshtml:line 43
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-03 08:51:29,586</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-07-03 09:09:08,608</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-03 09:11:01,210</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:11:01 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Permission denied for relation Mkt_PTB_XAI_HRZ</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:11:51,708</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:11:51 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near "203222_"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:12:31,694</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:12:31 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near "203222_"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-03 09:12:57,718</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-07-03 09:15:59,149</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:15:59 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Permission denied for relation mkt_workload_stid</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:17:12,814</date> 
+    <thread>14</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:17:12 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Permission denied for relation Mkt_PTB_XAI_HRZ</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:19:02,401</date> 
+    <thread>37</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:19:02 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Failed to connect to shr4_vrt_pro_005 on host srvcs-vrt-pro.its.hpecorp.net, port 5433. Reason: FATAL: LDAP authentication failed for user "srvc_pro_b2b_adr"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void Connect(System.Collections.Generic.Dictionary`2[System.String,System.Object])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.Core.VConnection.Connect(Dictionary`2 connectionSettings)
+   at Vertica.Data.Internal.ADO.Net.SConnection.Open()
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:19:35,653</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:19:35 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Failed to connect to shr4_vrt_pro_005 on host srvcs-vrt-pro.its.hpecorp.net, port 5433. Reason: FATAL: LDAP authentication failed for user "SRVC_PRO_B2B_ADR"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void Connect(System.Collections.Generic.Dictionary`2[System.String,System.Object])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.Core.VConnection.Connect(Dictionary`2 connectionSettings)
+   at Vertica.Data.Internal.ADO.Net.SConnection.Open()
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-07-03 09:21:36,694</date> 
+    <thread>32</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>07/03/2024 04:21:36 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Failed to connect to shr4_vrt_pro_005 on host srvcs-vrt-pro.its.hpecorp.net, port 5433. Reason: FATAL: LDAP authentication failed for user "SRVC_PRO_B2B_ADR"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void Connect(System.Collections.Generic.Dictionary`2[System.String,System.Object])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.Core.VConnection.Connect(Dictionary`2 connectionSettings)
+   at Vertica.Data.Internal.ADO.Net.SConnection.Open()
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-07-03 09:24:48,356</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

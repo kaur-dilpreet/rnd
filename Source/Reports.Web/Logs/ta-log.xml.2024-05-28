@@ -1,0 +1,346 @@
+<INFO > 
+    <date>2024-05-28 08:27:14,324</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-28 08:32:21,386</date> 
+    <thread>32</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1187
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 09:00:58,375</date> 
+    <thread>30</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>The process cannot access the file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTReports\2cf874c3-9924-4be9-a939-862a7907c9b5-162f8299-7743-47e9-8d81-3616865fddd2.csv' because it is being used by another process.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-28 09:04:39,926</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-28 11:08:49,820</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-28 12:28:28,709</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-28 12:37:06,841</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716924923478</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 356
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:37:06,842</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716924923477</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 356
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:38:49,965</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716924923484</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:38:50,203</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716924923483</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:44:13,126</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716925183908</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:45:17,213</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716925183915</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-28 12:47:30,358</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716925183918</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-28 13:40:47,258</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-28 13:43:27,574</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/createticket</errorPath>
+    <rawUrl>/cmoChat/createticket?uniqueId=b3823f21-d966-4bc3-a905-b6d964a570dd&_=1716928857920</rawUrl>
+    <className>BLL.CMOChatProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+        <param name="questionId"><![CDATA[b3823f21-d966-4bc3-a905-b6d964a570dd]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.CMOChatProvider.CreateTicket(Int64 userId, Guid questionId)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-28 18:58:15,039</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

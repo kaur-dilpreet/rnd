@@ -1,0 +1,58 @@
+<INFO > 
+    <date>2024-06-25 10:09:10,925</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-25 10:09:53,199</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/25/2024 05:09:53 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai2</errorPath>
+    <rawUrl>/sdrai2</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 16.81.247.147:8501</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-25 10:10:35,539</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/25/2024 05:10:35 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai2/getcategories</errorPath>
+    <rawUrl>/sdrai2/getcategories?Length=6&__RequestVerificationToken=FGsQtPyMI8JewWWM-UrO3PBBVN079ILb37MfGaq3g_F6LvrxgkB_6Gfp1nsWdpEENuLm6vFdefalGpIap2C_xiORA3LMK2scHNikGEIS8L7B8N2d0&LeadId=123344566&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 16.81.247.147:8501</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-25 10:15:12,713</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

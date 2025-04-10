@@ -1,0 +1,21 @@
+﻿@model Reports.Core.Domain.Models.AccessRequestsModel
+
+@{
+    ViewBag.Title = "Reports - Access Requests";
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/Requests")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/Requests")
+}
+
+<div id="requestsPage" class="adminPage">
+    <div id="requestsTableWrapper">
+        @Html.Partial("_RequestsPartial", Model)
+    </div>
+</div>

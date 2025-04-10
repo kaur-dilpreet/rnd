@@ -1,0 +1,7 @@
+﻿@model Reports.Core.Domain.Models.AccessRequestsModel
+
+@foreach (var request in Model.Requests)
+{
+    @Html.Partial("_RequestsTrRowPartial", request)
+}
+    

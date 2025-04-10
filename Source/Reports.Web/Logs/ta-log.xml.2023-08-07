@@ -1,0 +1,185 @@
+<INFO > 
+    <date>2023-08-07 07:01:42,281</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:10:11,956</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:10:51,733</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:24:40,553</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:26:54,344</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:29:00,172</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:36:21,577</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 07:41:01,793</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 08:10:31,918</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 08:11:26,878</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 08:36:14,726</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 08:48:07,288</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 09:01:12,940</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 11:19:31,035</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-07 11:27:08,900</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/genai/askquestion</errorPath>
+    <rawUrl>/genai/askquestion?Length=5</rawUrl>
+    <className>DABLLTA.GenAIProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Invalid URI: The URI scheme is not valid.</message>
+    <source>Reports.Data</source>
+    <targetSite>System.String GetResponse(System.String, RequestMethod, System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Data.APIHelper.GetResponse(String uri, RequestMethod requestMethod, NameValueCollection headerElements, NameValueCollection data, String jsonData, String contentType) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Data\APIHelper.cs:line 189
+   at Reports.BLL.Providers.GenAIProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-07 11:28:22,210</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/genai/askquestion</errorPath>
+    <rawUrl>/genai/askquestion?Length=5</rawUrl>
+    <className>DABLLTA.GenAIProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>No connection could be made because the target machine actively refused it 16.81.247.147:9485</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-07 11:45:13,123</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 12:21:22,216</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-07 12:21:38,892</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/genai/questionfeedback</errorPath>
+    <rawUrl>/genai/questionfeedback?uniqueId=3366cc5e-9714-43eb-a2c9-1969cd253c85&isCorrect=false&_=1691436092550</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 128
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-07 12:24:00,891</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 12:25:16,298</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 12:49:32,357</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 16:51:27,510</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-07 16:59:28,705</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/genai/askquestion</errorPath>
+    <rawUrl>/genai/askquestion?Length=5</rawUrl>
+    <className>DABLLTA.GenAIProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The underlying connection was closed: The connection was closed unexpectedly.</message>
+    <source>Reports.Data</source>
+    <targetSite>System.String GetResponse(System.String, RequestMethod, System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Data.APIHelper.GetResponse(String uri, RequestMethod requestMethod, NameValueCollection headerElements, NameValueCollection data, String jsonData, String contentType) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Data\APIHelper.cs:line 184
+   at Reports.BLL.Providers.GenAIProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\GenAIProvider.cs:line 86
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-07 17:08:09,360</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-07 17:46:39,977</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

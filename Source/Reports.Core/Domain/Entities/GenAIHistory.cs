@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Reports.Core.Domain.Entities
+{
+    public class GenAIHistory : Entity
+    {
+        public virtual Guid UniqueId { get; set; }
+        public virtual Guid QuestionId { get; set; }
+        public virtual String Question { get; set; }
+        public virtual Boolean? IsCorrect { get; set; }
+        public virtual Boolean TicketOpened { get; set; }
+        public virtual String UsecaseSpecificData { get; set; }
+        public virtual Byte Usecase { get; set; }
+    }
+}

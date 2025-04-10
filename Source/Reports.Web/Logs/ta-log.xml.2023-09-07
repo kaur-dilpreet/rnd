@@ -1,0 +1,43 @@
+<INFO > 
+    <date>2023-09-07 08:09:54,643</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-07 10:37:44,695</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-07 12:11:41,784</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-07 12:22:31,820</date> 
+    <thread>29</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1694114434312</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-07 12:42:17,081</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-07 13:13:47,211</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

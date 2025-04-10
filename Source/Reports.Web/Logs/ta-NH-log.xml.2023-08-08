@@ -1,0 +1,148 @@
+<ERROR> 
+    <date>2023-08-08 07:59:29,810</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: select user0_.Id as id1_4_, user0_.UniqueId as uniqueid2_4_, user0_.RoleId as roleid3_4_, user0_.Email as email4_4_, user0_.FirstName as firstname5_4_, user0_.LastName as lastname6_4_, user0_.NTID as ntid7_4_, user0_.UserCanExportAll as usercanexportall8_4_, user0_.ReportGeneratorAccess as reportgeneratoraccess9_4_, user0_.AskBIAccess as askbiaccess10_4_, user0_.ReportAccess as reportaccess11_4_, user0_.TimezoneOffset as timezoneoffset12_4_, user0_.IsApproved as isapproved13_4_, user0_.LastActivityDateTime as lastactivitydatetime14_4_, user0_.CreatedByUserId as createdbyuserid15_4_, user0_.LastModifiedByUserId as lastmodifiedbyuserid16_4_, user0_.CreationDateTime as creationdatetime17_4_, user0_.LastModificationDateTime as lastmodificationdatetime18_4_ from Users user0_ where user0_.Email=@p0 ORDER BY CURRENT_TIMESTAMP OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AskBIAccess'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:8f2813f5-eded-4bd0-a265-87c8884c6897
+Error Number:207,State:1,Class:16
+<ERROR> 
+    <date>2023-08-08 07:59:29,827</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 07:59:29,832</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 07:59:29,832</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:04:08,884</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: select user0_.Id as id1_4_, user0_.UniqueId as uniqueid2_4_, user0_.RoleId as roleid3_4_, user0_.Email as email4_4_, user0_.FirstName as firstname5_4_, user0_.LastName as lastname6_4_, user0_.NTID as ntid7_4_, user0_.UserCanExportAll as usercanexportall8_4_, user0_.ReportGeneratorAccess as reportgeneratoraccess9_4_, user0_.AskBIAccess as askbiaccess10_4_, user0_.ReportAccess as reportaccess11_4_, user0_.TimezoneOffset as timezoneoffset12_4_, user0_.IsApproved as isapproved13_4_, user0_.LastActivityDateTime as lastactivitydatetime14_4_, user0_.CreatedByUserId as createdbyuserid15_4_, user0_.LastModifiedByUserId as lastmodifiedbyuserid16_4_, user0_.CreationDateTime as creationdatetime17_4_, user0_.LastModificationDateTime as lastmodificationdatetime18_4_ from Users user0_ where user0_.Email=@p0 ORDER BY CURRENT_TIMESTAMP OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AskBIAccess'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:e169fa26-d100-4e5d-886b-d094af612132
+Error Number:207,State:1,Class:16
+<ERROR> 
+    <date>2023-08-08 08:04:08,892</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:04:08,895</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:04:08,896</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:06:42,229</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: select user0_.Id as id1_4_, user0_.UniqueId as uniqueid2_4_, user0_.RoleId as roleid3_4_, user0_.Email as email4_4_, user0_.FirstName as firstname5_4_, user0_.LastName as lastname6_4_, user0_.NTID as ntid7_4_, user0_.UserCanExportAll as usercanexportall8_4_, user0_.ReportGeneratorAccess as reportgeneratoraccess9_4_, user0_.AskBIAccess as askbiaccess10_4_, user0_.ReportAccess as reportaccess11_4_, user0_.TimezoneOffset as timezoneoffset12_4_, user0_.IsApproved as isapproved13_4_, user0_.LastActivityDateTime as lastactivitydatetime14_4_, user0_.CreatedByUserId as createdbyuserid15_4_, user0_.LastModifiedByUserId as lastmodifiedbyuserid16_4_, user0_.CreationDateTime as creationdatetime17_4_, user0_.LastModificationDateTime as lastmodificationdatetime18_4_ from Users user0_ where user0_.Email=@p0 ORDER BY CURRENT_TIMESTAMP OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AskBIAccess'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:48d7fb56-c5b4-4564-a2b3-03c3de5684a2
+Error Number:207,State:1,Class:16
+<ERROR> 
+    <date>2023-08-08 08:06:42,237</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:06:42,240</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 08:06:42,241</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 10:23:58,054</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: select accessrequ0_.Id as id1_0_, accessrequ0_.UniqueId as uniqueid2_0_, accessrequ0_.ReportGeneratorAccess as reportgeneratoraccess3_0_, accessrequ0_.AskBIAccess as askbiaccess4_0_, accessrequ0_.ReportAccess as reportaccess5_0_, accessrequ0_.IsApproved as isapproved6_0_, accessrequ0_.IsDenied as isdenied7_0_, accessrequ0_.DenyReason as denyreason8_0_, accessrequ0_.ResponseBy as responseby9_0_, accessrequ0_.ResponseDateTime as responsedatetime10_0_, accessrequ0_.CreationDateTime as creationdatetime11_0_, accessrequ0_.CreatedBy as createdby12_0_ from AccessRequests accessrequ0_ where accessrequ0_.UniqueId=@p0 ORDER BY CURRENT_TIMESTAMP OFFSET 0 ROWS FETCH FIRST 1 ROWS ONLY
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AskBIAccess'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:372a6da6-25c9-4860-8cb3-a4ac39de1202
+Error Number:207,State:1,Class:16
+<ERROR> 
+    <date>2023-08-08 10:23:58,073</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 10:23:58,075</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>
+<ERROR> 
+    <date>2023-08-08 10:23:58,076</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'AskBIAccess'.
+</ERROR>

@@ -1,0 +1,247 @@
+﻿table.table {
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    width: 100%;
+}
+
+table.table > tbody > tr > td,
+table.table > thead > tr > th {
+    padding: 10px;
+    border-left: none;
+    border-bottom: none;
+    border-bottom: 1px solid #000;
+}
+
+table.table tbody > tr > td:first-child,
+table.table thead > tr > th:first-child {
+    border-left: none;
+}
+
+table.table tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+table.table tbody > tr > td {
+    background-color: #fff;
+}
+
+table.table > tbody > tr:nth-child(2n+1) > td {
+    background-color: #f8f8f8;
+}
+
+table.table.hasDetails > tbody > tr > td {
+    background-color: #fff;
+}
+
+table.table.hasDetails > tbody > tr:nth-child(4n+1) > td {
+    background-color: #f8f8f8;
+}
+
+table.table > tbody > tr > td.header {
+    font-weight: bold;
+}
+
+table.table > thead tr {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+table.table > thead tr > th {
+    text-align: center;
+    font-weight: bold;
+    /*border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;*/
+}
+
+table.table.hasDetails > tbody > tr > td {
+    cursor: pointer;
+}
+
+table.table.hasDetails > tbody > tr.master:hover > td {
+    background-color: #bbb;
+}
+
+table.table.hasDetails > tbody > tr.master:hover > td a {
+    color: #fff;
+}
+
+table.table.hasDetails > tbody > tr.details {
+    height: 0px;
+}
+
+table.table.hasDetails > tbody > tr.details > td {
+    padding: 0px;
+    border: none;
+    cursor: default;
+}
+
+table.table.hasDetails > tbody > tr.details > td > div {
+    border-bottom: 1px solid #3e2d42;
+    display: none;
+    padding: 10px;
+}
+
+table.table.hasDetails > tbody > tr.details:last-child > td > div {
+    border-bottom: none;
+}
+
+table.table.hasDetails > tbody > tr.details > td {
+    border-top: none;
+    background-color: #fff;
+}
+
+table.table.hasDetails > tbody > tr.details > td > div > div {
+    padding: 10px;
+    overflow-y: visible !important;
+}
+
+table.table.hasDetails > tbody > tr.master:nth-last-child(2) > td {
+    border-bottom: none;
+}
+
+table.table2 {
+    width: 100%;
+    border-spacing: 0px;
+    padding: 0px;
+}
+
+table.table2 > thead > tr > th {
+    height: 36px;
+    padding: 6px;
+    margin: 0px;
+    font-weight: 600;
+    border-bottom: 1px solid #686868;
+    text-align: left;
+}
+
+table.table2 > tbody > tr > td {
+    padding: 6px;
+    border-bottom: 1px solid #bcbcbc;
+    background-color: #fff;
+    text-align: left;
+}
+
+table.table2 > tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+table.invoice {
+    width: 100%;
+    border: 1px solid #686868;
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+}
+
+table.invoice thead th {
+    background-color: #bcbcbc;
+    height: 32px;
+    border-right: 1px solid #686868;
+}
+
+table.invoice thead th:last-child {
+    border-right: none;
+}
+
+table.invoice tbody td {
+    background-color: #fff;
+    border-right: 1px solid #686868;
+    border-top: 1px solid #686868;
+    height: 12px;
+    padding: 10px;
+}
+
+table.invoice tbody td:last-child {
+    border-right: none;
+}
+
+table.invoice tbody tr.totalRow td {
+    font-weight: 600;
+    text-align: right;
+}
+
+table.invoice tbody tr.totalRow td.price {
+    background-color: #686868;
+    color: #bcbcbc;
+}
+
+table.invoice tbody td.price {
+    text-align: right;
+}
+
+table tr.invalid td {
+    color: #ff0000;
+}
+
+table.selectable tr.master:hover > td {
+    background-color: rgba(97, 71, 103, 1) !important;
+    color: #fff !important;
+}
+
+table.selectable tr.master:hover > td a {
+    color: #fff !important;
+}
+
+table.selectable tr.details tr.selected > td {
+    background-color: rgba(1, 168, 129, 1) !important;
+    color: #fff !important;
+}
+
+table.selectable tr.details tr.selected > td a {
+    color: #fff !important;
+}
+
+
+table.table3 {
+    width: 100%;
+}
+
+table.table3 th {
+    text-align: left;
+    font-weight: normal;
+    color: #838383;
+    font-size: 16px;
+    border-bottom: 1px #e9e9e9 solid;
+    height: 34px;
+    padding: 10px;
+}
+
+table.table3 td {
+    text-align: left;
+    font-weight: normal;
+    color: #575757;
+    font-size: 18px;
+    background-color: #fff;
+    border-bottom: 1px #e9e9e9 solid;
+    height: 54px;
+    padding: 10px;
+}
+
+table.table3 td:first-child {
+    border-left: 1px #e9e9e9 solid;
+}
+
+table.table3 td:last-child {
+    border-right: 1px #e9e9e9 solid;
+}
+
+table .actions {
+    width: 60px;
+    text-align: center;
+}
+
+/* Mobile */
+
+.mobile table.table.hasDetails > tbody > tr > td {
+    background-color: #e9e9e9 !important;
+}
+
+.mobile table.table.hasDetails > tbody > tr:nth-child(4n+1) > td {
+    background-color: #fff !important;
+}
+
+.mobile table.table.hasDetails > tbody > tr.details > td {
+    background-color: #fff !important;
+}

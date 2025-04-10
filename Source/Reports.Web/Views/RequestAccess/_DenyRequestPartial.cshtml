@@ -1,0 +1,33 @@
+﻿@model Reports.Core.Domain.Models.DenyRequestModel
+
+<div id="denyAccessRequestDialog" class="ovDialog twoColumnForm" data-title="Deny Access Request">
+    @using (Ajax.BeginForm("Deny", "RequestAccess", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "bms.formBegin('frmDenyAccessRequest')",
+        OnComplete = "bms.frmDenyAccessRequestComplete(xhr, 'frmDenyAccessRequest')"
+    },
+
+            new { id = "frmDenyAccessRequest" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <p>
+            Deny request for <b>@Model.RequesterFullName</b>.
+        </p>
+        <div class="formRow">
+            <div class="textBox fullRow" id="divComment">
+                <div id="commentCharLimitWrapper"><span id="commentCharLimit">500</span> characters left</div>
+                @Html.LabelFor(m => m.Comment)
+                @Html.TextAreaFor(m => m.Comment, new { dataLimit = "500", dataCharLimitField = "commentCharLimit" })
+                @Html.ValidationMessageFor(m => m.Comment)
+            </div>
+        </div>
+
+        <div class="divSubmit">
+            @Html.HiddenFor(m => m.UniqueId)
+            <input type="button" class="cancelBtn" value="Cancel" />
+            <input type="submit" class="primaryButton" value="Submit" />
+        </div>
+    }
+</div>

@@ -1,0 +1,78 @@
+<INFO > 
+    <date>2023-09-26 08:10:58,126</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 08:35:39,231</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 09:37:48,737</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 09:39:14,345</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-26 09:40:54,111</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportusers</errorPath>
+    <rawUrl>/mart/reportusers?Length=4</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>ReportUsers</methodName>
+    <params>
+    </params>
+    <message>null id in Reports.Core.Domain.Entities.MARTReportUser entry (don't flush the Session after an exception occurs)</message>
+    <source>Reports.BLL</source>
+    <targetSite>Void UpdateMARTReportUsers(Int64, Reports.Core.Domain.Models.MARTReportUserAccessModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.UpdateMARTReportUsers(Int64 userId, MARTReportUserAccessModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 391
+   at Reports.UI.Controllers.MARTController.ReportUsers(MARTReportUserAccessModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 323
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-26 09:42:11,805</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 09:49:13,591</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 10:51:23,012</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 10:57:05,954</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 15:24:44,799</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 15:28:40,256</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 15:29:20,339</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-26 15:33:39,686</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

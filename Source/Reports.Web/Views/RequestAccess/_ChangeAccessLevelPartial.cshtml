@@ -1,0 +1,57 @@
+﻿@model Reports.Core.Domain.Models.ChangeAccessLevelModel
+
+<div id="changeAccessLevelDialog" class="ovDialog twoColumnForm" data-title="Change Access Level">
+    @using (Ajax.BeginForm("ChangeAccessLevel", "RequestAccess", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "bms.formBegin('frmChangeAccessLevel')",
+        OnComplete = "bms.frmChangeAccessLevelComplete(xhr, 'frmChangeAccessLevel')"
+    },
+
+            new { id = "frmDenyAccessRequest" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <p>
+            Appove request / change access levele for <b>@Model.RequesterFullName</b>.
+        </p>
+
+        <h2>User Request</h2>
+        <div class="formRow">
+            <div class="textBox" id="divUserRequestAskBIAccess">
+                @Html.CheckBoxFor(m => m.UserRequest.AskBIAccess, new { disabled = "disabled" }) @Html.LabelFor(m => m.UserRequest.AskBIAccess)
+            </div>
+            <div class="textBox" id="divUserRequestCMOChatAccess">
+                @Html.CheckBoxFor(m => m.UserRequest.CMOChatAccess, new { disabled = "disabled" }) @Html.LabelFor(m => m.UserRequest.CMOChatAccess)
+            </div>
+            <div class="textBox" id="divUserRequestSDRAIAccess">
+                @Html.CheckBoxFor(m => m.UserRequest.SDRAIAccess, new { disabled = "disabled" }) @Html.LabelFor(m => m.UserRequest.SDRAIAccess)
+            </div>
+            <div class="textBox" id="divUserRequestChatGPIAccess">
+                @Html.CheckBoxFor(m => m.UserRequest.ChatGPIAccess, new { disabled = "disabled" }) @Html.LabelFor(m => m.UserRequest.ChatGPIAccess)
+            </div>
+        </div>
+
+        <h2>User Access Level</h2>
+        <div class="formRow">
+            <div class="textBox" id="divAskBIAccess">
+                @Html.CheckBoxFor(m => m.AskBIAccess) @Html.LabelFor(m => m.AskBIAccess)
+            </div>
+            <div class="textBox" id="divCMOChatAccess">
+                @Html.CheckBoxFor(m => m.CMOChatAccess) @Html.LabelFor(m => m.CMOChatAccess)
+            </div>
+            <div class="textBox" id="divSDRAIAccess">
+                @Html.CheckBoxFor(m => m.SDRAIAccess) @Html.LabelFor(m => m.SDRAIAccess)
+            </div>
+            <div class="textBox" id="divChatGPIAccess">
+                @Html.CheckBoxFor(m => m.ChatGPIAccess) @Html.LabelFor(m => m.ChatGPIAccess)
+            </div>
+        </div>
+
+        <div class="divSubmit">
+            @Html.HiddenFor(m => m.UniqueId)
+            <input type="button" class="cancelBtn" value="Cancel" />
+            <input type="submit" class="primaryButton" value="Submit" />
+        </div>
+    }
+</div>

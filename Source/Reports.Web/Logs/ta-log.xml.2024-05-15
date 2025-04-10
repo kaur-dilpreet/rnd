@@ -1,0 +1,25 @@
+<INFO > 
+    <date>2024-05-15 16:13:22,383</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-15 16:13:58,682</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat/askquestion</errorPath>
+    <rawUrl>/cmochat/askquestion?Length=7</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Attempted to divide by zero.</message>
+    <source>Reports.Core</source>
+    <targetSite>Void SetupKey(Byte[])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Encryption.BlowFish.SetupKey(Byte[] cipherKey) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Encryption\BlowFish.cs:line 235
+   at Reports.Core.Encryption.BlowFish..ctor(String hexKey) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Encryption\BlowFish.cs:line 56
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 89
+    ]]></stackTrace>
+</ERROR>

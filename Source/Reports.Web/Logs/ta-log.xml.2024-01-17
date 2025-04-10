@@ -1,0 +1,111 @@
+<INFO > 
+    <date>2024-01-17 09:19:34,138</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-01-17 09:26:55,753</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-01-17 09:31:24,294</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-01-17 09:35:47,918</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-01-17 09:40:06,589</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/loadmore</errorPath>
+    <rawUrl>/cmoChat/loadmore?skip=100&_=1705513165489</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>GetCMOChatModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.</message>
+    <source>.Net SqlClient Data Provider</source>
+    <targetSite>Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at NHibernate.Driver.NHybridDataReader.Read()
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+
+    ]]></innerExceptionStackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-01-17 09:42:52,834</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/loadmore</errorPath>
+    <rawUrl>/cmoChat/loadmore?skip=100&_=1705513209995</rawUrl>
+    <className>UI.CMOChatController</className>
+    <methodName>LoadMore</methodName>
+    <params>
+    </params>
+    <message>Exception of type 'System.OutOfMemoryException' was thrown.</message>
+    <source>mscorlib</source>
+    <targetSite>Void ExpandByABlock(Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Text.StringBuilder.ExpandByABlock(Int32 minBlockCharCount)
+   at System.Text.StringBuilder.Append(Char* value, Int32 valueCount)
+   at System.Text.StringBuilder.Append(Char[] value, Int32 startIndex, Int32 charCount)
+   at System.IO.StringWriter.Write(Char[] buffer, Int32 index, Int32 count)
+   at Newtonsoft.Json.Utilities.JavaScriptUtils.WriteEscapedJavaScriptString(TextWriter writer, String s, Char delimiter, Boolean appendDelimiters, Boolean[] charEscapeFlags, StringEscapeHandling stringEscapeHandling, IArrayPool`1 bufferPool, Char[]& writeBuffer)
+   at Newtonsoft.Json.JsonTextWriter.WriteEscapedString(String value, Boolean quote)
+   at Newtonsoft.Json.JsonTextWriter.WriteValue(String value)
+   at Newtonsoft.Json.JsonWriter.WriteValue(JsonWriter writer, PrimitiveTypeCode typeCode, Object value)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializePrimitive(JsonWriter writer, Object value, JsonPrimitiveContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at Reports.Core.Utilities.Utilities.Serialize(Object serializeObject) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 153
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 418
+   at Reports.UI.Controllers.CMOChatController.LoadMore(Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\CMOChatController.cs:line 59
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-01-17 09:52:02,526</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/loadmore</errorPath>
+    <rawUrl>/cmoChat/loadmore?skip=100&_=1705513100971</rawUrl>
+    <className>UI.CMOChatController</className>
+    <methodName>LoadMore</methodName>
+    <params>
+    </params>
+    <message>Exception of type 'System.OutOfMemoryException' was thrown.</message>
+    <source>mscorlib</source>
+    <targetSite>System.String ConcatArray(System.String[], Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.String.ConcatArray(String[] values, Int32 totalLength)
+   at System.String.Concat(String[] values)
+   at Reports.Core.Logging.Logger.BuildExceptionMessage(Exception x, String className, String methodName, NameValueCollection methodParams) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Logging\Logger.cs:line 86
+   at Reports.Core.Logging.Logger.Error(Exception ex, String className, String methodName, NameValueCollection methodParams) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Logging\Logger.cs:line 44
+   at Reports.Core.ErrorHandling.ErrorHandler.HandleError(Exception ex, String className, String methodName, NameValueCollection methodParams) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\ErrorHandling\ErrorHandler.cs:line 20
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 420
+   at Reports.UI.Controllers.CMOChatController.LoadMore(Int32 skip) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\CMOChatController.cs:line 59
+    ]]></stackTrace>
+</ERROR>

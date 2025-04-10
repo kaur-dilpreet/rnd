@@ -1,0 +1,41 @@
+<INFO > 
+    <date>2023-09-22 09:31:35,350</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-22 09:41:51,785</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Failed to connect to shr4_vrt_pro_005 on host srvcs-vrt-pro.its.hpecorp.net, port 5433. Reason: Network error: No such host is known</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void Connect(System.Collections.Generic.Dictionary`2[System.String,System.Object])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.Core.VConnection.Connect(Dictionary`2 connectionSettings)
+   at Vertica.Data.Internal.ADO.Net.SConnection.Open()
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-22 09:45:36,159</date> 
+    <thread>15</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>A column named 'Flag2' already belongs to this DataTable.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 785
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 708
+    ]]></stackTrace>
+</ERROR>

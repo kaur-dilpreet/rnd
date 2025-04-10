@@ -1,0 +1,367 @@
+<INFO > 
+    <date>2024-05-23 09:15:32,883</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-23 09:26:45,011</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-23 11:06:15,426</date> 
+    <thread>89</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 130
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 11:06:39,484</date> 
+    <thread>89</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 130
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 11:06:39,484</date> 
+    <thread>89</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 130
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 11:11:43,598</date> 
+    <thread>100</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 11:11:49,588</date> 
+    <thread>100</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 11:11:49,588</date> 
+    <thread>100</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-23 12:57:19,682</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-23 20:12:20,932</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-23 20:14:45,511</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 20:15:01,781</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 20:15:01,782</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 20:15:07,188</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-23 20:33:07,020</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-23 20:34:06,187</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Unexpected "foreach" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "foreach" with "@".
+</message>
+    <source>System.Web.WebPages.Razor</source>
+    <targetSite>Void EnsureGeneratedCode()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_cmochat_Index_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\cmochat\Index.cshtml:line 52
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 20:34:06,188</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Unexpected "foreach" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "foreach" with "@".
+</message>
+    <source>System.Web.WebPages.Razor</source>
+    <targetSite>Void EnsureGeneratedCode()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_cmochat_Index_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\cmochat\Index.cshtml:line 52
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-23 20:35:07,000</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmoChat/askquestion</errorPath>
+    <rawUrl>/cmoChat/askquestion</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The required anti-forgery form field "__RequestVerificationToken" is not present.</message>
+    <source>System.Web.WebPages</source>
+    <targetSite>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Helpers.AntiXsrf.TokenValidator.ValidateTokens(HttpContextBase httpContext, IIdentity identity, AntiForgeryToken sessionToken, AntiForgeryToken fieldToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext)
+   at System.Web.Helpers.AntiForgery.Validate()
+   at System.Web.Mvc.ValidateAntiForgeryTokenAttribute.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__0(AsyncCallback asyncCallback, Object asyncState)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-23 20:39:09,733</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-23 21:44:53,797</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-23 21:48:11,772</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-23 22:37:35,880</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

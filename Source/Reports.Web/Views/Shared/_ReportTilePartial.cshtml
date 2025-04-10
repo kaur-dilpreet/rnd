@@ -1,0 +1,29 @@
+﻿@model Reports.Core.Domain.Models.ReportTileModel
+
+<div class="block @(Model.UserHasAccess ? String.Empty : "disabled")" title="@Model.Title" data-id="@Model.Id">
+    <a href="@(Model.UserHasAccess ? Model.Url : "#")" class="@(Model.UserHasAccess ? String.Empty : "disabled")">
+        <div class="logo">
+            @if (!String.IsNullOrEmpty(Model.Logo))
+            {
+                <img src="@Url.Content(Model.Logo)" />
+            }
+        </div>
+        <h3>@Model.Title</h3>
+        <p title="@Model.ShortDescription">
+            @Model.ShortDescription
+        </p>
+    </a>
+    <div class="blockFooter"></div>
+    @if (Model.UserHasAccess)
+    {
+        <div class="rbcontextmenuBtn smallContextBtn" data-menuid="contextmenu-@Model.Id"><a href="#">...</a></div>
+        <div class="rbcontextmenu" id="contextmenu-@Model.Id">
+            <ul class="contextMenu">
+                <li>
+                    <a href="@(Model.UserHasAccess ? Model.Url : "#")" class="@(Model.UserHasAccess ? String.Empty : "disabled")">View Report</a>
+                </li>
+            </ul>
+        </div>
+    }
+</div>
+

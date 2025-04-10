@@ -1,0 +1,32 @@
+﻿@model Reports.Core.Domain.Models.MARTConnectionModel
+
+<div class="formRow">
+    <div class="textBox fullRow" id="divVerticaHost">
+        @Html.LabelFor(m => m.Host)
+        @Html.TextBoxFor(m => m.Host, new { maxLength = "200" })
+        @Html.ValidationMessageFor(m => m.Host)
+    </div>
+</div>
+<div class="formRow">
+    <div class="textBox fullRow" id="divVerticaDatabase">
+        @Html.LabelFor(m => m.Database)
+        @Html.TextBoxFor(m => m.Database, new { maxLength = "100" })
+        @Html.ValidationMessageFor(m => m.Database)
+    </div>
+</div>
+<div class="formRow">
+    <div class="textBox" id="divVerticaUsername">
+        @Html.LabelFor(m => m.Username)
+        @Html.TextBoxFor(m => m.Username, new { maxLength = "50" })
+        @Html.ValidationMessageFor(m => m.Username)
+    </div>
+    <div class="textBox" id="divVerticaPassword">
+        @Html.LabelFor(m => m.Password)
+        @Html.TextBoxFor(m => m.Password, new { maxLength = "50", type = "password" })
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+</div>
+@Html.HiddenFor(m => m.Type)
+
+        
+   

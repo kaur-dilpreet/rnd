@@ -1,0 +1,21 @@
+<INFO > 
+    <date>2023-07-13 08:24:40,078</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-07-13 11:01:03,487</date> 
+    <thread>7</thread> 
+    <logger>TA</logger><message>11 Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection. 
+    at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at Vertica.Data.Internal.IO.VStream.Receive(Byte[] buf, Int32 off, Int32 siz)
+   at Vertica.Data.Internal.IO.RowData.readNextColumn()
+   at Vertica.Data.Internal.IO.RowData.readAll()
+   at Vertica.Data.Internal.IO.DataRowResponseMessage.FinishReadRow()
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadMessage()
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.MoveToNextRow()
+   at Vertica.Data.Internal.DataEngine.VResultSet.Move(MoveDirection direction, Int64 offset)
+   at Vertica.Data.Internal.ADO.Net.SDataReader.Read()
+   at Reports.BLL.Workers.DataWorker.PrepareData(Object reportId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Workers\DataWorker.cs:line 231</message>
+</ERROR>

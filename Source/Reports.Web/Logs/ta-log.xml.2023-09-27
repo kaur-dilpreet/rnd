@@ -1,0 +1,655 @@
+<INFO > 
+    <date>2023-09-27 08:28:03,244</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 08:28:05,829</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/MART/Report</errorPath>
+    <rawUrl>/MART/Report</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult Report(System.Guid, System.String, System.Nullable`1[System.Int32])' in 'Reports.UI.Controllers.MARTController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>System.Object ExtractParameterFromDictionary(System.Reflection.ParameterInfo, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Reflection.MethodInfo)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 08:28:05,841</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/MART/Report</errorPath>
+    <rawUrl>/MART/Report</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult Report(System.Guid, System.String, System.Nullable`1[System.Int32])' in 'Reports.UI.Controllers.MARTController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>System.Object ExtractParameterFromDictionary(System.Reflection.ParameterInfo, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Reflection.MethodInfo)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 08:28:09,888</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/MART/Report</errorPath>
+    <rawUrl>/MART/Report</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult Report(System.Guid, System.String, System.Nullable`1[System.Int32])' in 'Reports.UI.Controllers.MARTController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>System.Object ExtractParameterFromDictionary(System.Reflection.ParameterInfo, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Reflection.MethodInfo)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 08:28:09,888</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/MART/Report</errorPath>
+    <rawUrl>/MART/Report</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult Report(System.Guid, System.String, System.Nullable`1[System.Int32])' in 'Reports.UI.Controllers.MARTController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>System.Object ExtractParameterFromDictionary(System.Reflection.ParameterInfo, System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Reflection.MethodInfo)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 08:28:48,006</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportusers</errorPath>
+    <rawUrl>/mart/reportusers?Length=4</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>ReportUsers</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Void UpdateMARTReportUsers(Int64, Reports.Core.Domain.Models.MARTReportUserAccessModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.UpdateMARTReportUsers(Int64 userId, MARTReportUserAccessModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 421
+   at Reports.UI.Controllers.MARTController.ReportUsers(MARTReportUserAccessModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 334
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 08:48:46,580</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 08:50:50,505</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 08:59:07,814</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 09:02:58,027</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 09:55:05,910</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 09:56:15,086</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/report/d2ae0860-784f-401a-ad28-0f6d9c09e310</errorPath>
+    <rawUrl>/mart/report/d2ae0860-784f-401a-ad28-0f6d9c09e310</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>App_Web_kdso54l3</source>
+    <targetSite>Void Execute()</targetSite>
+    <stackTrace><![CDATA[
+   at ASP._Page_Views_mart_Report_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\Report.cshtml:line 28
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 09:56:15,087</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/report/d2ae0860-784f-401a-ad28-0f6d9c09e310</errorPath>
+    <rawUrl>/mart/report/d2ae0860-784f-401a-ad28-0f6d9c09e310</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>App_Web_kdso54l3</source>
+    <targetSite>Void Execute()</targetSite>
+    <stackTrace><![CDATA[
+   at ASP._Page_Views_mart_Report_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\Report.cshtml:line 28
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 10:21:02,017</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 10:25:42,921</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 10:59:22,574</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 11:16:02,834</date> 
+    <thread>29</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 11:16:34,659</date> 
+    <thread>28</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 11:20:50,994</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 11:21:29,945</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 11:22:43,988</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 11:26:57,332</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 11:40:43,954</date> 
+    <thread>30</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Relation "CDR_P_Bus_Sum.Mkt_PTB_HRZa" does not exist</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 11:44:02,822</date> 
+    <thread>44</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 11:49:53,868</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 11:50:44,181</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 12:43:56,577</date> 
+    <thread>134</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Access to the path 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTReports' is denied.</message>
+    <source>mscorlib</source>
+    <targetSite>Void WinIOError(Int32, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 12:44:27,506</date> 
+    <thread>122</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Access to the path 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTReports' is denied.</message>
+    <source>mscorlib</source>
+    <targetSite>Void WinIOError(Int32, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 12:45:52,254</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 12:47:44,100</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 13:03:46,354</date> 
+    <thread>50</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 1 cannot be parsed using the current Delimiters.</message>
+    <source>Microsoft.VisualBasic</source>
+    <targetSite>System.String[] ParseDelimitedLine()</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1091
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 742
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 13:16:13,300</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 13:18:04,730</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1092
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 743
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:18:35,383</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index</message>
+    <source>mscorlib</source>
+    <targetSite>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1092
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 743
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:20:28,042</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Microsoft.VisualBasic</source>
+    <targetSite>System.String[] ParseDelimitedLine()</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:22:14,806</date> 
+    <thread>33</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 13:24:31,619</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-27 13:25:51,634</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1092
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 827
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:31:03,625</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>ERROR: Insufficient resources to execute plan on pool rp_srvc_gbl_mkt_cdr_pro [Timedout waiting for resource request: Request exceeds limits: Memory(KB) Exceeded: Requested = 2097152, Free = 0 (Limit = 275193600, Used = 279375240) (queueing threshold)]</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:38:17,900</date> 
+    <thread>31</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>ERROR: Insufficient resources to execute plan on pool rp_srvc_gbl_mkt_cdr_pro [Timedout waiting for resource request: Request exceeds limits: Memory(KB) Exceeded: Requested = 2097152, Free = 0 (Limit = 275193600, Used = 279375240) (queueing threshold)]</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-27 13:53:03,996</date> 
+    <thread>65</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>ERROR: Insufficient resources to execute plan on pool rp_srvc_gbl_mkt_cdr_pro [Timedout waiting for resource request: Request exceeds limits: Memory(KB) Exceeded: Requested = 2097152, Free = 0 (Limit = 275193600, Used = 279375240) (queueing threshold)]</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-27 14:01:43,155</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 14:31:15,411</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 14:36:53,334</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-27 16:07:43,818</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

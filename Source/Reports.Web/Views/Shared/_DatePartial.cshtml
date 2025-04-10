@@ -1,0 +1,13 @@
+﻿@model Reports.Core.Domain.Models.DateModel
+
+@{ 
+    String dateFormat = String.Format("{{0:{0}}}", Model.DateFormat);
+}
+
+@if (Model.DateTime.HasValue)
+{
+    if (Model.DateTime.Value.Year > 1)
+    {
+        @String.Format(dateFormat, Model.DateTime.Value.AddMinutes(Model.ShowWithTimezoneOffset ? Reports.Core.Utilities.Utilities.GetLoggedInUserTimezoneOffset() : 0))
+    }
+}

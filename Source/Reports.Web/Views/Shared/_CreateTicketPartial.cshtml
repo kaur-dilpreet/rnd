@@ -1,0 +1,28 @@
+﻿@model Reports.Core.Domain.Models.SharePointTicketModel
+
+<div id="createTicketDialog" class="ovDialog twoColumnForm" data-title="Create Ticket">
+    @using (Ajax.BeginForm("createticket", Model.Controller, new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "bms.formBegin('frmCreateTicket')",
+        OnComplete = "bms.frmCreateTicketComplete(xhr, 'frmCreateTicket')"
+    },
+        new { id = "frmCreateTicket" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="formRow">
+            <div class="textBox fullRow" id="divIssueDescription">
+                @Html.LabelFor(m => m.IssueDescription)
+                @Html.TextAreaFor(m => m.IssueDescription, new { maxLendth = "500" })
+                @Html.ValidationMessageFor(m => m.IssueDescription)
+            </div>
+        </div>
+        <div class="divSubmit">
+            @Html.HiddenFor(m => m.UniqueId)
+            @Html.HiddenFor(m => m.Response)
+            <input type="button" class="cancelBtn" value="Cancel" />
+            <input type="submit" class="primaryButton" value="Submit" />
+        </div>
+    }
+</div>

@@ -1,0 +1,250 @@
+﻿@import url(Colors.less);
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.adminPage {
+    padding-bottom: 60px;
+}
+
+#askBIPage {
+    height: ~"calc(100vh - 50px)";
+}
+
+#askBIPage #askBIDialog {
+    margin: 0px auto;
+    width: 800px;
+}
+
+#askBIPage #askBIDialog #divQuestion {
+    width: ~"calc(100% - 202px)";
+    padding-bottom: 6px;
+}
+
+#askBIPage #askBIDialog #divQuestion input[type=text] {
+    line-height: normal;
+    width: 100%;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#askBIPage #askBIDialog #divCategory {
+    width: 190px;
+}
+
+#askBIPage #askBIDialog #divCategory select {
+    width: 100px;
+}
+
+#askBIPage #askBIDialog input[type=submit] {
+    position: absolute;
+    top: 31px;
+    right: 0px;
+}
+
+#askBIPage .modelVersion {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+}
+
+#askBIPage .modelVersion .row {
+    height: 20px;
+}
+
+#askBIPage .modelVersion label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#askBIPage .modelVersion span {
+    white-space: nowrap;
+}
+
+#askBIPage #askBIDialog .divSubmit {
+    padding: 0px;
+    margin: 0px;
+}
+
+#askBIPage #askBIDialog #divDisplaySQL {
+    position: relative;
+}
+
+#askBIPage .answers {
+    position: relative;
+    width: 800px;
+    margin: 0px auto;
+    font-size: 18px;
+}
+
+#askBIPage .answers .showSQLQueriesCheckbox {
+}
+
+#askBIPage .answers .sqlQuery {
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFBC443D;
+    margin-top: 10px;
+}
+
+#askBIPage .answers h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#askBIPage .answers .sqlQuery h3 {
+    margin-top: 0px;
+}
+
+#askBIPage .answers.showSQLQueries .sqlQuery {
+    display: block;
+}
+
+#askBIPage .historyWrapper.scroll-wrapper {
+    position: fixed !important;
+    left: 10px;
+    top: 70px;
+    width: 360px;
+    height: ~"calc(100% - 130px)";
+}
+
+#askBIPage .historyWrapper ul {
+    
+}
+
+#askBIPage .historyWrapper .question {
+    margin-bottom: 5px;
+    list-style: circle;
+    cursor: pointer;
+}
+
+#askBIPage .historyWrapper .question .questionText {
+    font-size: 15px;
+    cursor: pointer;
+    color: #0182a9;
+    font-weight: bold;
+}
+
+#askBIPage .historyWrapper .question:hover {
+    color: @green;
+}
+
+#askBIPage .answersWrapper.scroll-wrapper {
+    height: ~"calc(100vh - 230px)";
+    width: 800px;
+}
+
+#askBIPage .answers .questionContainer {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    width: ~"calc(100% - 30px)";
+    margin-left: 10px;
+    height: auto;
+}
+
+#askBIPage .answers .questionContainer .questionDateTime {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+ 
+#askBIPage .answers .answer .answerWrapper {
+    min-height: 32px;
+}
+
+#askBIPage .answers .answer .tableActions {
+    margin: 10px 0px;
+    text-align: right;
+}
+
+#askBIPage .answers .answer table {
+    width: 100%;
+    border: 1px solid @gray;
+    padding: 0px;
+}
+
+#askBIPage .answers .answer table thead tr th {
+    padding: 5px;
+    border-bottom: 1px solid @gray;
+    border-right: 1px solid @gray;
+}
+
+#askBIPage .answers .answer table thead tr th:last-child {
+    border-right: none;
+}
+
+#askBIPage .answers .answer table tbody tr td {
+    padding: 5px;
+    border-bottom: 1px solid @gray;
+    border-right: 1px solid @gray;
+}
+
+#askBIPage .answers .answer table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#askBIPage .answers .answer table tbody tr td:last-child {
+    border-right: none;
+}
+
+#askBIPage .answers .answer table tbody tr td.number {
+    text-align: right;
+}
+
+#askBIPage #loadMore {
+    display: block;
+    margin: 10px auto;
+}
+
+#askBIPage .answers .questionContainer .createTicketContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#askBIPage .answers .questionContainer.notCorrect .createTicketContainer {
+    display: block;
+}
+
+#askBIPage .answers .questionContainer .refreshAnswerContainer {
+    position: relative;
+    text-align: right;
+    margin-top: 10px;
+    height: 32px;
+}
+
+#askBIPage .answers .questionContainer.refreshing .refreshAnswerContainer .refreshAnswer {
+    display: none;
+}
+
+#askBIPage .answers .questionContainer .spinner {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    margin-right: 4px;
+}
+
+@media (max-width: 1600px) {
+    #askBIPage .historyWrapper.scroll-wrapper {
+        width: ~"calc((100vw - 200px)/4 - 20px)";
+    }
+
+    #askBIPage #askBIDialog {
+        width: ~"calc(3*(100vw - 200px)/4 - 160px)";
+    }
+
+    #askBIPage .answersWrapper.scroll-wrapper,
+    #askBIPage .answers {
+        width: ~"calc(3*(100vw - 200px)/4 - 160px)";
+    }
+}

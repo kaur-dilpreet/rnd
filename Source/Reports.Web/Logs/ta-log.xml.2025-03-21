@@ -1,0 +1,72 @@
+<ERROR> 
+    <date>2025-03-21 09:20:40,429</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>03/21/2025 04:20:40 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Reports.Core.Domain.Models.GenAIQuestion]', but this dictionary requires a model item of type 'System.Collections.Generic.List`1[Reports.Core.Domain.Models.AskBIQuestion]'.</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>Void SetModel(System.Object)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   at System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   at System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at ASP._Page_Views_askbi_Index_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\GenAI\Source\Reports.Web\Views\askbi\Index.cshtml:line 90
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2025-03-21 09:20:40,447</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>03/21/2025 04:20:40 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/askbi</errorPath>
+    <rawUrl>/askbi</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Reports.Core.Domain.Models.GenAIQuestion]', but this dictionary requires a model item of type 'System.Collections.Generic.List`1[Reports.Core.Domain.Models.AskBIQuestion]'.</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>Void SetModel(System.Object)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   at System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   at System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at ASP._Page_Views_askbi_Index_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\GenAI\Source\Reports.Web\Views\askbi\Index.cshtml:line 90
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace></error>
+</ERROR>

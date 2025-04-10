@@ -1,0 +1,14 @@
+﻿@model List<String>
+
+<div class="suggestions">
+    @if (Model != null)
+    {
+        foreach (var question in Model)
+        {
+            <div class="suggestion">
+                @question
+            </div>
+        }
+        <div class="clear"></div>
+    }
+</div>

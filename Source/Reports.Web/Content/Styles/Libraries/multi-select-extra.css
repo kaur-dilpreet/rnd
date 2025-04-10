@@ -1,0 +1,50 @@
+﻿.ms-container {
+    width: 630px !important;
+    height: 360px !important;
+}
+
+.ms-container input[type=text] {
+    width: 260px !important;
+    border-color: #cfcfcf !important;
+    border-radius: 3px !important;
+}
+
+.ms-container .headerText {
+    padding: 0px 0px 4px 2px; 
+    color: #494949;
+}
+
+.ms-container .footerText {
+    padding: 4px 0px 0px 2px; 
+    font-size: 12px;
+    color: #ccc;
+}
+
+.ms-selectable,
+.ms-selection {
+    width: 260px !important;
+    height: 330px !important;
+    background-color: transparent !important;
+}
+
+.ms-selectable ul.ms-list,
+.ms-selection ul.ms-list {
+    width: 260px !important;
+    height: 330px !important;
+    background-color: #fff;
+}
+
+
+.ms-selectable ul li.ms-elem-selectable,
+.ms-selection ul li.ms-elem-selection {
+    height: 30px !important;
+    padding-top: 6px !important;
+}
+
+.ms-optgroup-label {
+    color: #614767 !important;
+    cursor: default !important;
+    height: 30px !important;
+    padding-top: 6px !important;
+    background: #cfcfcf;
+}

@@ -1,0 +1,173 @@
+<INFO > 
+    <date>2024-05-10 07:44:52,943</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-10 07:48:04,632</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-10 07:54:19,766</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-10 07:54:55,225</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/sdrai/getcategories</errorPath>
+    <rawUrl>/sdrai/getcategories?Length=5&__RequestVerificationToken=Gw4Rrcyk2R-1lbuBNb2t3p32Ylr1RlTlSAiN8i6Wk-lpdHcB0ljhXCYWqQwj7X_qAR-SPwvQQRIWn2NCRuGvGTg8a0dF4V9ZI-R5ZlWVsAKzG-iC0&LeadId=LEAD-0010646287&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Unexpected character encountered while parsing value: [. Path 'categories[0].questions', line 1, position 107.</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object ReadStringValue(Newtonsoft.Json.ReadType)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Reports.Core.Utilities.Utilities.Deserialize[T](String serializedString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 245
+   at Reports.BLL.Providers.SDRAIProvider.GetCategories(Int64 userId, String leadId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\SDRAIProvider.cs:line 86
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-05-10 07:55:07,028</date> 
+    <thread>14</thread> 
+    <logger>TA</logger>
+    <errorPath>/sdrai/getcategories</errorPath>
+    <rawUrl>/sdrai/getcategories?Length=5&__RequestVerificationToken=Gw4Rrcyk2R-1lbuBNb2t3p32Ylr1RlTlSAiN8i6Wk-lpdHcB0ljhXCYWqQwj7X_qAR-SPwvQQRIWn2NCRuGvGTg8a0dF4V9ZI-R5ZlWVsAKzG-iC0&LeadId=LEAD-0010646287&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Unexpected character encountered while parsing value: [. Path 'categories[0].questions', line 1, position 107.</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object ReadStringValue(Newtonsoft.Json.ReadType)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Reports.Core.Utilities.Utilities.Deserialize[T](String serializedString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 245
+   at Reports.BLL.Providers.SDRAIProvider.GetCategories(Int64 userId, String leadId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\SDRAIProvider.cs:line 86
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-10 07:57:13,453</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-10 08:02:57,678</date> 
+    <thread>42</thread> 
+    <logger>TA</logger>
+    <errorPath>/sdrai/getcategories</errorPath>
+    <rawUrl>/sdrai/getcategories?Length=5&__RequestVerificationToken=Iq5RWIhyCW-8Dc_I0vu8M0P-5EH0XsG726mFzTJR_BWc9eXP0mm3-GiZYJ4jOB6wVxDprHJkiF1vtvv2AasNLFUkYeHN64l5EUhPN5sogO-8xF-l0&LeadId=LEAD-0010646287&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>BLL.Utilities</className>
+    <methodName>RenderPartialViewToString</methodName>
+    <params>
+        <param name="controller"><![CDATA[Reports.UI.Controllers.SDRAIController,_LeadDataPartial]]></param>
+        <param name="model"><![CDATA[{"qid":"23","lead_id":"LEAD-0010646287","uid":"americas:stepanar","time_taken":0.73080057511106133,"categories":[{"category_id":"account_firmographics","category_name":"Account Firmographics","questions":["What does the company do?","Where is the company located?","How big is the company?"]},{"category_id":"account_sfdc_pipeline","category_name":"Account SFDC Pipeline","questions":["Are there any active deal registrations related to the company? If so, what are they?","What are any recent opportunities on the account both recently closed and open?"]},{"category_id":"account_lead_pipeline","category_name":"Account Lead Pipeline","questions":["Are there any other open leads (other employees) attached to the account that any other person may be contacting? If so, which are those?","Are there any duplicate contacts/leads?","Are there any internal employees attached to the account (owners of other deals)? If so, who are they?"]},{"category_id":"account_purchase_order_history","category_name":"Account Purchase/Order History","questions":["What was purchased in the past?","How long was buying cycle for past opportunities in the account?","What was the value generated by the account in the past?"]},{"category_id":"known_contact","category_name":"Known Contact","questions":["Are there additional known contacts/roles associated with the account? If so, who are they?","Has the contact on this lead been affiliated with a past opportunities? What was the end result?"]},{"category_id":"digital_activity","category_name":"Digital Activity","questions":["Are there any web visitors from the account who were engaged recently? If so, what did they engage on?","On which web document did the account most engage on recently?","What are the top 5 web pages where the account had the most engaged visits in the recent past?","Have they opened any marketing emails and what was the interaction?"]},{"category_id":"sales_recommendation_and_digital_intent","category_name":"Sales Recommendations and Digital Intent","questions":["What are the current sales recommendation for the account?","What are the digital topics of interest recently shown by the account?","What are the some latest popular keywords researched by the account?"]},{"category_id":"lead_details","category_name":"Lead Details","questions":["Which BU does the lead belong to?","Summarize the latest lead notes associated with the account.","What are the personas associated with the account?","What BANT information do we know about the lead?","What does the lead notes say?"]},{"category_id":"chat_activity","category_name":"Chat Activity","questions":["Are there any chat conversations related to the contact? If so, what are they about?","Summarize recent chat conversations related to the lead."]}],"data":{"company_name":"Northrop Grumman","country":"United States","geo":"North America","hpe_lead_id":"LEAD-0010646287","lead_closed_date":"2023-02-01","lead_contact_name":"Michael Hardman","lead_created_date":"2022-11-09","lead_email_address":"michael.hardman@ngc.com","lead_owner":"Nick McKenzie","lead_status":"Closed","mdcp_org_id":1072990436,"stid":86098}}]]></param>
+    </params>
+    <message>C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\sdrai\_LeadDataPartial.cshtml(62): error CS0103: The name 'question' does not exist in the current context</message>
+    <source>System.Web</source>
+    <targetSite>System.CodeDom.Compiler.CompilerResults Compile()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 408
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-10 08:30:42,748</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-10 09:30:32,292</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-10 09:35:46,950</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-10 09:43:54,146</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/sdrai/askquestion</errorPath>
+    <rawUrl>/sdrai/askquestion</rawUrl>
+    <className>BLL.Utilities</className>
+    <methodName>RenderPartialViewToString</methodName>
+    <params>
+        <param name="controller"><![CDATA[Reports.UI.Controllers.SDRAIController,_AnswerPartial]]></param>
+        <param name="model"><![CDATA[{"qid":"63","lead_id":"LEAD-0010646287","uid":"americas:stepanar","answer":"Final Answer: To find the location of the company, we need to look at the columns 'city', 'state', 'zip_code', and 'country'.","time_taken":3.7968594660051167,"data_validation":[[["hpe_lead_id","account_id","account_id_type","account_name","industry_segment","idc_sector","idc_industry","is_small_business","city","state","zip_code","country","region","url"],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","\"FOREST, MINING, META     \"","MANUFACTURING          ","No","Anoka                                                                                               ","Minnesota                                                                                           ","553031778       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","\"FOREST, MINING, META     \"","MANUFACTURING          ","No","Bethpage                                                                                            ","New York                                                                                            ","117141035       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","\"FOREST, MINING, META     \"","MANUFACTURING          ","No","Waimea                                                                                              ","Hawaii                                                                                              ","96796           ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","\"STATE, LOCAL & EDUCA     \"","GENERAL SERVICES       ","No","Springfield                                                                                         ","Illinois                                                                                            ","627044291       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Arlington                                                                                           ","Virginia                                                                                            ","22202           ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Arlington                                                                                           ","Virginia                                                                                            ","222092330       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Augusta                                                                                             ","Georgia                                                                                             ","309073593       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Beltsville                                                                                          ","Maryland                                                                                            ","207052009       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Bethpage                                                                                            ","New York                                                                                            ","117143582       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Cape Canaveral                                                                                      ","Florida                                                                                             ","32920           ","USA                                                                                                 ","North America","www.northropgrumman.com"],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Chandler                                                                                            ","Arizona                                                                                             ","852866615       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Charlottesville                                                                                     ","Virginia                                                                                            ","229115842       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Chesapeake                                                                                          ","Virginia                                                                                            ","233202647       ","USA                                                                                                 ","North America","www.northropgrumman.com"],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Clearfield                                                                                          ","Utah                                                                                                ","84016           ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Colchester                                                                                          ","Vermont                                                                                             ","054467851       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Corona                                                                                              ","California                                                                                          ","928805409       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Dallas                                                                                              ","Texas                                                                                               ","752161004       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Dulles                                                                                              ","Virginia                                                                                            ","201666874       ","USA                                                                                                 ","North America",null],["LEAD-0010646287",86098,"STID","NORTHROP GRUMMAN CORP - US","Defense/Security/Police","AEROSPACE                ","MANUFACTURING          ","No","Eden Prairie                                                                                        ","Minnesota                                                                                           ","553442807       ","USA                                                                                                 ","North America",null]]]}]]></param>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>App_Web_zrnwbl3u</source>
+    <targetSite>Void Execute()</targetSite>
+    <stackTrace><![CDATA[
+   at ASP._Page_Views_sdrai__AnswerPartial_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\sdrai\_AnswerPartial.cshtml:line 31
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 408
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-10 09:47:45,114</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-10 11:51:03,407</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

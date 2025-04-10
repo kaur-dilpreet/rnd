@@ -1,0 +1,68 @@
+﻿@model Reports.Core.Domain.Models.RequestAccessModel
+
+@{
+    ViewBag.Title = "Reports - Request Access";
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/RequestAccess")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/RequestAccess")
+}
+
+<div id="requestAccessPage" class="adminPage">
+    @if (!Model.HasPendingRequest)
+    {
+        <br />
+        <p>
+            You do not have permission to access Reports.
+        </p>
+        <br />
+        <form>
+            <div class="formRow">
+                <div class="textBox">
+                    <input type="checkbox" id="accessAskBI" /><label>Ask BI</label>
+                </div>
+                <div class="textBox">
+                    <input type="checkbox" id="accessCMOChat" /><label>CMO Chat</label>
+                </div>
+                @*<div class="textBox">
+                    <input type="checkbox" id="accessSDRAI" /><label>SDR AI</label>
+                </div>
+                <div class="textBox">
+                    <input type="checkbox" id="accessChatGPI" /><label>Chat GPI</label>
+                </div>*@
+            </div>
+            <input type="button" class="primaryButton" id="requestAccess" value="Request Access" />
+        </form>
+    }
+    else if (!Model.IsDenied && !Model.IsApproved)
+    {
+        <br />
+        <p>
+            Your request to access Reports application was submitted on <b>@String.Format("{0:MMM d, yyyy hh:mm tt}", Model.AccessRequestSubmitionDateTime)</b>.
+        </p>
+        <br />
+    }
+    else if (Model.IsDenied)
+    {
+        <br />
+        <p>
+            Your request was denied.
+        </p>
+        if (!String.IsNullOrEmpty(Model.DenyReason))
+        {
+            <br />
+            <p>
+                <b>Here is the reason:</b>
+                <br />
+                @Model.DenyReason
+            </p>
+        }
+        <br />
+    }
+</div>

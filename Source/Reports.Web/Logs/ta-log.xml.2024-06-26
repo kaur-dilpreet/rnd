@@ -1,0 +1,257 @@
+<INFO > 
+    <date>2024-06-26 09:44:11,039</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-26 12:50:12,598</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-26 15:46:23,528</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-26 15:46:51,408</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:46:51 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Could not cast or convert from System.String to System.Collections.Generic.List`1[Reports.Core.Domain.Models.ExampleLeadId].</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object EnsureTypeAssignable(System.Object, System.Type, System.Type)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 15:47:17,096</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:47:17 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Could not cast or convert from System.String to System.Collections.Generic.List`1[Reports.Core.Domain.Models.ExampleLeadId].</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object EnsureTypeAssignable(System.Object, System.Type, System.Type)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 15:48:28,138</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:48:28 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Could not cast or convert from System.String to System.Collections.Generic.List`1[Reports.Core.Domain.Models.ExampleLeadId].</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object EnsureTypeAssignable(System.Object, System.Type, System.Type)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 15:50:25,152</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:50:25 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Could not cast or convert from System.String to System.Collections.Generic.List`1[Reports.Core.Domain.Models.ExampleLeadId].</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>System.Object EnsureTypeAssignable(System.Object, System.Type, System.Type)</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 15:51:48,096</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:51:48 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>No connection could be made because the target machine actively refused it 16.81.247.147:8501</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 15:51:55,894</date> 
+    <thread>25</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/26/2024 10:51:55 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai/getcategories</errorPath>
+    <rawUrl>/sdrai/getcategories?Length=5&__RequestVerificationToken=bnrOmRY2u-ULcLYeaEn5eevHYCt3OjFSAZMcmHmb5Svmxgh3-xUITsuyk9AkbEboZ7udiA2ryW_ZunMtQuQfvP6hX3UpF9aGVTM7OePlospap6LU0&LeadId=0012388241&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>No connection could be made because the target machine actively refused it 16.81.247.147:8501</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-26 20:02:28,502</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-26 20:31:38,071</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-26 20:36:00,375</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/27/2024 03:36:00 AM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+</message>
+    <source>System.Web.WebPages.Razor</source>
+    <targetSite>Void EnsureGeneratedCode()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-26 20:36:00,376</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/27/2024 03:36:00 AM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+</message>
+    <source>System.Web.WebPages.Razor</source>
+    <targetSite>Void EnsureGeneratedCode()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_5.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_0.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace></error>
+</ERROR>

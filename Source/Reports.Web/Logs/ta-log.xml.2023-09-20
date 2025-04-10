@@ -1,0 +1,196 @@
+<INFO > 
+    <date>2023-09-20 10:33:06,054</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-20 10:34:58,807</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-20 10:48:18,528</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-20 11:14:46,835</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/upload/upload</errorPath>
+    <rawUrl>/upload/upload</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Method not found: 'Void Reports.Core.Domain.Models.JsonModel.set_FileSize(Int32)'.</message>
+    <source>Reports.UI</source>
+    <targetSite>System.Web.Mvc.ActionResult Upload(System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.UI.Controllers.UploadController.Upload(String imageId)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-20 11:15:02,423</date> 
+    <thread>55</thread> 
+    <logger>TA</logger>
+    <errorPath>/upload/upload</errorPath>
+    <rawUrl>/upload/upload</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Method not found: 'Void Reports.Core.Domain.Models.JsonModel.set_FileSize(Int32)'.</message>
+    <source>Reports.UI</source>
+    <targetSite>System.Web.Mvc.ActionResult Upload(System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.UI.Controllers.UploadController.Upload(String imageId)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-20 11:16:22,323</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-20 12:10:46,808</date> 
+    <thread>31</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-20 12:27:09,399</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-20 12:31:46,329</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-20 12:33:34,621</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-20 12:34:37,880</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-20 12:36:50,683</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-20 12:56:39,315</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

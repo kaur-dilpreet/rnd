@@ -1,0 +1,174 @@
+<INFO > 
+    <date>2023-09-11 11:03:28,286</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-11 11:05:15,188</date> 
+    <thread>5</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 653
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-11 11:38:53,874</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-11 11:41:36,090</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>The expression contains undefined function call IFF().</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 550
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 653
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-11 11:45:04,414</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/home/keepsessionalive</errorPath>
+    <rawUrl>/home/keepsessionalive?_=1694457665356</rawUrl>
+    <className>BLL.AccountProvider</className>
+    <methodName>GetUser</methodName>
+    <params>
+        <param name="email"><![CDATA[stepanian@hpe.com]]></param>
+        <param name="isOnline"><![CDATA[True]]></param>
+    </params>
+    <message>Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.</message>
+    <source>System.Data</source>
+    <targetSite>Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Impl.AbstractSessionImpl.get_Connection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-11 11:45:04,479</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/home/keepsessionalive</errorPath>
+    <rawUrl>/home/keepsessionalive?_=1694457665356</rawUrl>
+    <className>Application</className>
+    <methodName>Application_PostAuthenticateRequest</methodName>
+    <params>
+    </params>
+    <message>Begin failed with SQL exception</message>
+    <source>NHibernate</source>
+    <targetSite>Void Begin(System.Data.IsolationLevel)</targetSite>
+    <stackTrace><![CDATA[
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   at NHibernate.Transaction.AdoTransaction.Begin()
+   at NHibernate.Impl.AbstractSessionImpl.BeginTransaction()
+   at Reports.NH.Web.SessionPerRequestModule.BeginSession(ISessionFactory sessionFactory) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.NH\Web\SessionPerRequestModule.cs:line 38
+   at Reports.NH.Web.SessionPerRequestModule.<>c__DisplayClass1_0.<ContextBeginRequest>b__0() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.NH\Web\SessionPerRequestModule.cs:line 31
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at Reports.NH.LazySessionContext.CurrentSession() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.NH\LazySessionContext.cs:line 37
+   at NHibernate.Impl.SessionFactoryImpl.GetCurrentSession()
+   at Reports.NH.RepositoryWithTypedId`2.get_Session() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.NH\Repository.cs:line 43
+   at Reports.NH.RepositoryWithTypedId`2.GetAll() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.NH\Repository.cs:line 90
+   at Reports.BLL.Providers.AccountProvider.GetUser(String email, Boolean isOnline)
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Impl.AbstractSessionImpl.get_Connection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+    ]]></innerExceptionStackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-11 12:01:47,289</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-11 12:03:57,883</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Invalid number of arguments: function IIF().</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 653
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-11 12:18:22,419</date> 
+    <thread>53</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 653
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-11 12:18:54,279</date> 
+    <thread>53</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 653
+    ]]></stackTrace>
+</ERROR>

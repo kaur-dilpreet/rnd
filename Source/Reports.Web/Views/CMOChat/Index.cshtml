@@ -1,0 +1,62 @@
+﻿@model Reports.Core.Domain.Models.CMOChatModel
+
+@{
+    ViewBag.Title = "CMO Chat";
+    ViewBag.Subtitle = String.Empty;
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/CMOChat")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/CMOChat")
+}
+
+@section FooterText
+{
+    <div class="poweredBy">
+        Powered by Marketing Analytics
+    </div>
+}
+
+<div class="adminPage" id="cmoChatPage">
+    <div id="cmoChatDialog" class="ovDialog twoColumnForm">
+        @using (Ajax.BeginForm("AskQuestion", "CMOChat", new AjaxOptions
+        {
+            HttpMethod = "POST",
+            OnBegin = "bms.formBegin('frmCMOChat')",
+            OnComplete = "bms.frmCMOChatComplete(xhr, 'frmCMOChat')"
+        },
+
+        new { id = "frmCMOChat" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="formRow">
+                <div class="textBox fullRow" id="divQuestion">
+                    @Html.LabelFor(m => m.Question)
+                    @Html.TextBoxFor(m => m.Question)
+                    @Html.ValidationMessageFor(m => m.Question)
+                    <input type="submit" class="primaryButton" value="Submit" />
+                </div>
+            </div>
+
+            @Html.Partial("_SuggestionsPartial", Model.Suggestions)
+        }
+    </div>
+    <div class="history">
+        <div class="showGraphsCheckbox">
+            <input type="checkbox" id="showGraphs" /> <label>Show Charts</label>
+        </div>
+        <div class="showSQLQueriesCheckbox">
+            <input type="checkbox" id="showSQLQueries" /> <label>Show SQL Queries</label>
+        </div>
+        <div class="historyWrapper">
+            @Html.Partial("_HistoryTrPartial", Model.History)
+        </div>
+        <input type="button" class="primaryButton" id="loadMore" value="LoadMore" />
+    </div>
+</div>

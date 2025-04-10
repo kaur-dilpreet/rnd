@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Reports.Core.Domain.Models.ReportTileModel>
+
+<div class="carousel" data-left="0">
+    <a href="#" class="arrows leftArrow disabled"></a>
+    <div class="blocksWrapper">
+        <div class="blocks" style="width: @String.Format("{0}px;", Model.Count() * 210)">
+            @foreach (var resource in Model)
+            {
+                @Html.Partial("_ReportTilePartial", resource)
+            }
+        </div>
+    </div>
+    <a href="#" class="arrows rightArrow"></a>
+</div>
+

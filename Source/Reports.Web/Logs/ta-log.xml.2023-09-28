@@ -1,0 +1,382 @@
+<INFO > 
+    <date>2023-09-28 09:01:39,583</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-28 09:56:40,214</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-28 10:45:09,998</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-28 10:49:42,207</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-09-28 10:52:19,306</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-28 10:57:51,313</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923868764</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 10:57:58,356</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923875584</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-28 10:58:13,761</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-28 10:58:30,831</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907815</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 10:58:45,478</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907816</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 10:59:33,466</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907817</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 11:00:25,731</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907821</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 695
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 11:00:38,347</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907823</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetMARTReportDesignModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetMARTReportDesignModel(Int64 userId, Guid reportId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 566
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 11:00:47,040</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695923907823</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1505
+   at Reports.BLL.Providers.MARTProvider.GetMARTReportDesignModel(Int64 userId, Guid reportId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 566
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-09-28 11:01:15,293</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-09-28 11:06:50,949</date> 
+    <thread>33</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1695924094991</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetARTSaveToDiskModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. </message>
+    <source>mscorlib</source>
+    <targetSite>Int32 FromBase64_Decode(Char*, Int32, Byte*, Int32)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at Reports.Core.Utilities.Utilities.DecryptDatabasePassword(String encryptedText) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 467
+   at Reports.BLL.Providers.MARTProvider.GetDetails(String detailsString)
+   at Reports.BLL.Providers.MARTProvider.GetARTSaveToDiskModel(Int64 userId, Guid uniqueId)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 13:36:06,360</date> 
+    <thread>154</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 13:43:19,056</date> 
+    <thread>154</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 13:45:17,156</date> 
+    <thread>147</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/savereporttodisk</errorPath>
+    <rawUrl>/mart/savereporttodisk?Length=4</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>SaveMARTReportToDisk</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Line 213249 cannot be parsed using the current Delimiters.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource)
+   at Reports.BLL.Providers.MARTProvider.SaveMARTReportToDisk(Int64 userId, Guid uniqueId, List`1 dataSourcesToUpdate)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 14:00:57,841</date> 
+    <thread>29</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/report/f0ef15c9-780d-451b-ba31-9e41e25e2052</errorPath>
+    <rawUrl>/mart/report/f0ef15c9-780d-451b-ba31-9e41e25e2052</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Column 'Test1' does not belong to table .</message>
+    <source>System.Data</source>
+    <targetSite>System.Data.DataColumn GetDataColumn(System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at ASP._Page_Views_mart__ReportTablePartial_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\_ReportTablePartial.cshtml:line 128
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_mart_Report_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\Report.cshtml:line 103
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-09-28 14:00:57,842</date> 
+    <thread>29</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/report/f0ef15c9-780d-451b-ba31-9e41e25e2052</errorPath>
+    <rawUrl>/mart/report/f0ef15c9-780d-451b-ba31-9e41e25e2052</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Column 'Test1' does not belong to table .</message>
+    <source>System.Data</source>
+    <targetSite>System.Data.DataColumn GetDataColumn(System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at ASP._Page_Views_mart__ReportTablePartial_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\_ReportTablePartial.cshtml:line 128
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_mart_Report_cshtml.Execute() in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\mart\Report.cshtml:line 103
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+    ]]></stackTrace>
+</ERROR>

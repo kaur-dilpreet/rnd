@@ -1,0 +1,128 @@
+<ERROR> 
+    <date>2023-09-26 09:39:45,202</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: INSERT INTO MARTReportUsers (UniqueId, MARTReportId, UserId, CreationDateTime, CreatedBy, LastModificationDateTime, LastModifiedBy) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'LastModificationDateTime'.
+Invalid column name 'LastModifiedBy'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:c92ee31f-68c9-44a0-9196-87bea30b5bbd
+Error Number:207,State:1,Class:16
+<ERROR> 
+    <date>2023-09-26 09:39:45,213</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Invalid column name 'LastModificationDateTime'.
+Invalid column name 'LastModifiedBy'.
+</ERROR>
+<ERROR> 
+    <date>2023-09-26 09:39:59,914</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AssertionFailure</logger>An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+</ERROR>
+NHibernate.AssertionFailure: null id in Reports.Core.Domain.Entities.MARTReportUser entry (don't flush the Session after an exception occurs)
+<ERROR> 
+    <date>2023-09-26 09:40:39,242</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AssertionFailure</logger>An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+</ERROR>
+NHibernate.AssertionFailure: null id in Reports.Core.Domain.Entities.MARTReportUser entry (don't flush the Session after an exception occurs)
+<ERROR> 
+    <date>2023-09-26 09:40:54,112</date> 
+    <thread>9</thread> 
+    <logger>NHibernate.AssertionFailure</logger>An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+</ERROR>
+NHibernate.AssertionFailure: null id in Reports.Core.Domain.Entities.MARTReportUser entry (don't flush the Session after an exception occurs)
+<ERROR> 
+    <date>2023-09-26 10:53:03,509</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: INSERT INTO MARTReportUserExports (UniqueId, MARTReportId, UserId, RowCount, Filter, CreationDateTime, CreatedBy) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'RowCount'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:a1ead43e-a16c-4de0-8996-4c06eb44a00c
+Error Number:156,State:1,Class:15
+<ERROR> 
+    <date>2023-09-26 10:53:03,526</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Incorrect syntax near the keyword 'RowCount'.
+</ERROR>
+<ERROR> 
+    <date>2023-09-26 10:54:24,042</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: INSERT INTO MARTReportUserExports (UniqueId, MARTReportId, UserId, RowCount, Filter, CreationDateTime, CreatedBy) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'RowCount'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:a1ead43e-a16c-4de0-8996-4c06eb44a00c
+Error Number:156,State:1,Class:15
+<ERROR> 
+    <date>2023-09-26 10:54:24,043</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Incorrect syntax near the keyword 'RowCount'.
+</ERROR>
+<ERROR> 
+    <date>2023-09-26 10:55:47,034</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.AdoNet.AbstractBatcher</logger>Could not execute query: INSERT INTO MARTReportUserExports (UniqueId, MARTReportId, UserId, RowCount, Filter, CreationDateTime, CreatedBy) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+</ERROR>
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'RowCount'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+ClientConnectionId:a1ead43e-a16c-4de0-8996-4c06eb44a00c
+Error Number:156,State:1,Class:15
+<ERROR> 
+    <date>2023-09-26 10:55:47,035</date> 
+    <thread>5</thread> 
+    <logger>NHibernate.Util.ADOExceptionReporter</logger>Incorrect syntax near the keyword 'RowCount'.
+</ERROR>

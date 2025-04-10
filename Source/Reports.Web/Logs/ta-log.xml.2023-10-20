@@ -1,0 +1,159 @@
+<INFO > 
+    <date>2023-10-20 08:41:09,947</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-10-20 08:56:36,151</date> 
+    <thread>56</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTDataFiles\5b5d4a2b-28ea-43b2-b8c5-ba3e98c04998.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1174
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 08:58:05,880</date> 
+    <thread>56</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTDataFiles\5b5d4a2b-28ea-43b2-b8c5-ba3e98c04998.csv'.</message>
+    <source>Microsoft.VisualBasic</source>
+    <targetSite>System.String ValidatePath(System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1174
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 08:59:09,215</date> 
+    <thread>56</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTDataFiles\5b5d4a2b-28ea-43b2-b8c5-ba3e98c04998.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1174
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 08:59:15,636</date> 
+    <thread>43</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTDataFiles\5b5d4a2b-28ea-43b2-b8c5-ba3e98c04998.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.MARTConnectionModel, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 887
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 674
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 09:05:00,934</date> 
+    <thread>57</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\App_Data\MARTDataFiles\88e3a601-77ba-467a-bec6-901cfbb3a94c.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.MARTConnectionModel, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(MARTConnectionModel connection, String sqlQuery, String file)
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 674
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 09:29:19,102</date> 
+    <thread>122</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\temp\94dcb2c4-59ee-4d62-bad9-3c419c6e364a.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.MARTConnectionModel, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(MARTConnectionModel connection, String sqlQuery, String file)
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 674
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-10-20 09:32:33,398</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-10-20 09:34:30,718</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-10-20 09:35:43,453</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\temp\94dcb2c4-59ee-4d62-bad9-3c419c6e364a.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, Reports.Core.Domain.Models.MARTLoadReportTableModel, Boolean, Boolean, System.Collections.Generic.List`1[System.Guid], Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, MARTLoadReportTableModel details, Boolean loadData, Boolean loadFullData, List`1 dataSourcesToUpdate, Boolean forceFromDatasource) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 1187
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, MARTLoadReportTableModel model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 835
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-10-20 09:35:50,958</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Could not find file 'C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\temp\94dcb2c4-59ee-4d62-bad9-3c419c6e364a.csv'.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.MARTConnectionModel, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 900
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(MARTConnectionModel connection, String sqlQuery, String file) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 674
+    ]]></stackTrace>
+</ERROR>

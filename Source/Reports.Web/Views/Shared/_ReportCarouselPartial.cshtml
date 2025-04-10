@@ -1,0 +1,13 @@
+﻿@model  Reports.Core.Domain.Models.ReportCarouselModel
+
+@if (Model.Reports != null && Model.Reports.Count > 0)
+{
+    <div class="reportsCarousel">
+        @if (!String.IsNullOrEmpty(Model.Title))
+        {
+            <h2>@Model.Title</h2>
+        }
+        @Html.Partial("_ReportTilesPartial", Model.Reports)
+    </div>
+    <div class="clear"></div>
+}

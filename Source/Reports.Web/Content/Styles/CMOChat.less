@@ -1,0 +1,206 @@
+﻿@import url(Colors.less);
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.adminPage {
+    padding-bottom: 60px;
+}
+
+#cmoChatPage #cmoChatDialog {
+    margin: 0px auto;
+    width: 800px;
+}
+
+#cmoChatPage #chatGPIDialog input[type=submit] {
+    position: absolute;
+    right: 0px;
+    top: 31px;
+}
+
+#cmoChatPage .suggestions {
+    margin-top: 5px;
+}
+
+#cmoChatPage .suggestions .suggestion {
+    float: left;
+    background-color: @gray_lighter2;
+    border: 1px @gray_lighter solid;
+    border-radius: 10px;
+    padding: 10px 10px 6px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#cmoChatPage .suggestions .suggestion:hover {
+    background-color: @blue;
+    color: #fff;
+    border: 1px @blue_dark solid;
+}
+
+
+#cmoChatPage #cmoChatDialog .textBox {
+    width: 100% !important;
+}
+
+#cmoChatPage #cmoChatDialog input[type=text] {
+    line-height: normal;
+    width: ~"calc(100% - 100px)";
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#cmoChatPage #cmoChatDialog input[type=submit] {
+    position: relative;
+    top: 2px;
+}
+
+#cmoChatPage #cmoChatDialog #divDisplaySQL {
+    position: relative;
+}
+
+#cmoChatPage .history {
+    position: relative;
+    width: 800px;
+    margin: 0px auto;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+#cmoChatPage .history .showSQLQueriesCheckbox {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+#cmoChatPage .history .showGraphsCheckbox {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+#cmoChatPage .history .sqlQuery {
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFBC443D;
+    margin-top: 10px;
+}
+
+#cmoChatPage .history .sqlQuery h3 {
+    margin-top: 0px;
+}
+
+#cmoChatPage .history.showSQLQueries .sqlQuery {
+    display: block;
+}
+
+#cmoChatPage .history .questionContainer {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+#cmoChatPage .history .questionContainer .questionDateTime {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#cmoChatPage .history .questionContainer .createTicketContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#cmoChatPage .history .questionContainer.notCorrect .createTicketContainer {
+    display: block;
+}
+
+#cmoChatPage .history .chart {
+    display: none;
+}
+
+#cmoChatPage .history.showCharts .chart {
+    display: block;
+}
+
+#cmoChatPage .history .answer .tableActions {
+    margin: 10px 0px;
+    text-align: right;
+}
+
+#cmoChatPage .history .answer table {
+    width: 100%;
+    border: 1px solid @gray;
+    padding: 0px;
+}
+
+#cmoChatPage .history .answer table thead tr th {
+    padding: 5px;
+    border-bottom: 1px solid @gray;
+    border-right: 1px solid @gray;
+}
+
+#cmoChatPage .history .answer table thead tr th:last-child {
+    border-right: none;
+}
+
+#cmoChatPage .history .answer table tbody tr td {
+    padding: 5px;
+    border-bottom: 1px solid @gray;
+    border-right: 1px solid @gray;
+}
+
+#cmoChatPage .history .answer table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#cmoChatPage .history .answer table tbody tr td:last-child {
+    border-right: none;
+}
+
+#cmoChatPage .history .answer table tbody tr td.number {
+    text-align: right;
+}
+
+#cmoChatPage #loadMore {
+    display: block;
+    margin: 0px auto 20px auto;
+}
+
+#cmoChatPage .questionListWrapper {
+    position: absolute;
+    background-color: #fff;
+    border: 1px #a9a9a9 solid;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 100;
+    display: block;
+    padding: 10px;
+}
+
+#cmoChatPage #Question:focus ~ .questionListWrapper {
+    display: block;
+}
+
+.questionListWrapper ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.questionListWrapper ul li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.questionListWrapper ul li:hover,
+.questionListWrapper ul li.selected {
+    color: @green;
+}

@@ -1,0 +1,200 @@
+<INFO > 
+    <date>2024-06-24 07:50:45,837</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-24 07:53:56,657</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/24/2024 02:53:56 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai</errorPath>
+    <rawUrl>/sdrai</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetSDRAIModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 16.81.247.147:8501</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-24 08:19:34,952</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 08:36:11,768</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 17:40:14,253</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 17:44:11,229</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-24 17:45:42,122</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/25/2024 12:45:42 AM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai2/getcategories</errorPath>
+    <rawUrl>/sdrai2/getcategories?Length=6&__RequestVerificationToken=95h6-u_1_ilbzSmy9jLDsxxR3ugd5M0fL7Q0mAiR4dkEqj9xHYL_PSRApnzmr6-37wCyd3IcpLC5FVxls45LGdZJ_Wtueuew5sS7itm5B8Cm4Q5d0&LeadId=0011557805&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Input string was not in a correct format.</message>
+    <source>mscorlib</source>
+    <targetSite>Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<ERROR> 
+    <date>2024-06-24 17:46:56,281</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/25/2024 12:46:56 AM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai2/getcategories</errorPath>
+    <rawUrl>/sdrai2/getcategories?Length=6&__RequestVerificationToken=95h6-u_1_ilbzSmy9jLDsxxR3ugd5M0fL7Q0mAiR4dkEqj9xHYL_PSRApnzmr6-37wCyd3IcpLC5FVxls45LGdZJ_Wtueuew5sS7itm5B8Cm4Q5d0&LeadId=0011557805&X-Requested-With=XMLHttpRequest</rawUrl>
+    <className>DABLLTA.SDRAIProvider</className>
+    <methodName>GetCategories</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Input string was not in a correct format.</message>
+    <source>mscorlib</source>
+    <targetSite>Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.String.System.IConvertible.ToInt64(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-24 17:47:52,836</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:04:53,920</date> 
+    <thread>35</thread> 
+    <logger>TA</logger><message>{"message":"Error 410: Invalid user-question mapping. QID not found."}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:07:27,274</date> 
+    <thread>35</thread> 
+    <logger>TA</logger><message>{"message":"Error 410: Invalid user-question mapping. QID not found."}
+</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-24 18:07:55,314</date> 
+    <thread>35</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/25/2024 01:07:55 AM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/sdrai2/createticket</errorPath>
+    <rawUrl>/sdrai2/createticket?Length=5</rawUrl>
+    <className>BLL.SharePointProvider</className>
+    <methodName>CreateTicket</methodName>
+    <params>
+        <param name="userEmail"><![CDATA[stepanian@hpe.com]]></param>
+        <param name="title"><![CDATA[SDR AI]]></param>
+        <param name="source"><![CDATA[ADRAI]]></param>
+        <param name="question"><![CDATA[What does the company do?]]></param>
+        <param name="answer"><![CDATA[[{"query":"select * from hpcom_usr.src_genai_sdrsum_lead_firmographic_simplified where hpe_lead_id='LEAD-0011557805' order by 1;","data":[["hpe_lead_id","IB_vs_Prospects","RTM","HPE_Account_Classification","Industry_vertical","Roster_Status","Account_Segmentation","Compute_IB_Prospect","Storage_IB_Prospect","Edge_IB_Prospect","HPC_MCS_IB_Prospect","CIC_Visitors","ABX_Flag"],["LEAD-0011557805","IB","Direct/Sales Rostered","Active-Decline","CME","Rostered","Enterprise","IB","IB","IB","IB","No","No"]]}]]]></param>
+        <param name="creationDateTime"><![CDATA[6/25/2024 1:07:25 AM]]></param>
+    </params>
+    <message>Root element is missing.</message>
+    <source>System.Xml</source>
+    <targetSite>Void Throw(System.Exception)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XDocument.Load(XmlReader reader, LoadOptions options)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoGet(String url)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.RequestFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetFederationProviderInfo(String domainname)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.InitFederationProviderInfoForUser(String username)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Reports.BLL.Providers.SharePointProvider.CreateTicket(String userEmail, String title, String source, String question, String answer, DateTime creationDateTime, String issueDescription) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\SharePointProvider.cs:line 72
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-24 18:09:56,438</date> 
+    <thread>35</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:10:49,436</date> 
+    <thread>35</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:10:50,442</date> 
+    <thread>78</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:10:54,203</date> 
+    <thread>35</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:12:51,185</date> 
+    <thread>82</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-06-24 18:12:52,182</date> 
+    <thread>90</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >

@@ -1,0 +1,42 @@
+﻿@model Reports.Core.Domain.Models.AccessRequestsModel
+
+<table id="requestsTable" class="table" cellpadding="0" cellspacing="0">
+    <thead>
+        <tr>
+            <th class="requestRequester">
+                Requester
+            </th>
+            <th class="requestSubmissionDate">
+                Submission Date
+            </th>
+            <th class="requestStatus">
+                Status
+            </th>
+            <th class="requestAskBIAccess">
+                Ask BI
+            </th>
+            <th class="requestCMOChatAccess">
+                CMO Chat
+            </th>
+            <th class="requestSDRAIAccess">
+                SDR AI
+            </th>
+            <th class="requestChatGPIAccess">
+                Chat GPI
+            </th>
+            <th class="requestComment">
+                Comments
+            </th>
+            <th class="requestResponder">
+                Responder
+            </th>
+            <th class="requestResponseDate">
+                Response Date
+            </th>
+            <th class="actions"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @Html.Partial("_RequestsTrPartial", Model)
+    </tbody>
+</table>

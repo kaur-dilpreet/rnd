@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F89466CB-DC51-45DB-9990-36E7331FB37A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reports.Core</RootNamespace>
+    <AssemblyName>Reports.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\QA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ITG|AnyCPU'">
+    <OutputPath>bin\ITG\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FoolproofValidation, Version=0.9.5851.39121, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Foolproof.0.9.4518\lib\net45\FoolproofValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.23.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.23\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.17.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.17\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Markdig, Version=0.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.40.0\lib\net462\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cquential.Microsoft.Practices.ServiceLocation.1.0.0\lib\net35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.5.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.5.2\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vertica.Data, Version=7.2.3.0, Culture=neutral, PublicKeyToken=725728a8837b3bd5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vertica.Data.7.2.3\lib\net40\Vertica.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\DataCache.cs" />
+    <Compile Include="Caching\FileBasedCahce.cs" />
+    <Compile Include="Domain\CustomAuthentication\CustomIdentity.cs" />
+    <Compile Include="Domain\CustomAuthentication\CustomPrincipal.cs" />
+    <Compile Include="Domain\CustomAuthentication\ICustomIdentity.cs" />
+    <Compile Include="Domain\CustomAuthentication\ICustomPrincipal.cs" />
+    <Compile Include="Domain\Entities\AccessRequest.cs" />
+    <Compile Include="Domain\Entities\GenAIHistory.cs" />
+    <Compile Include="Domain\Entities\ChatGPIMessage.cs" />
+    <Compile Include="Domain\Entities\CMOChatQuestion.cs" />
+    <Compile Include="Domain\Entities\CMOChatHistory.cs" />
+    <Compile Include="Domain\Entities\BaseClass\ComparableObject.cs" />
+    <Compile Include="Domain\Entities\BaseClass\DomainSignatureAttribute.cs" />
+    <Compile Include="Domain\Entities\BaseClass\Entity.cs" />
+    <Compile Include="Domain\Entities\BaseClass\IEntityWithTypedId.cs" />
+    <Compile Include="Domain\Entities\User.cs" />
+    <Compile Include="Domain\Enumerations.cs" />
+    <Compile Include="Domain\Exceptions\BaseException.cs" />
+    <Compile Include="Domain\Exceptions\Exceptions.cs" />
+    <Compile Include="Domain\Entities\AskBIHistory.cs" />
+    <Compile Include="Domain\Models\CMOChatModels.cs" />
+    <Compile Include="Domain\Models\GenAIModels.cs" />
+    <Compile Include="Domain\Models\HomeModel.cs" />
+    <Compile Include="Domain\Models\AutoCompleteModel.cs" />
+    <Compile Include="Domain\Models\ChartModels.cs" />
+    <Compile Include="Domain\Models\AskBIModels.cs" />
+    <Compile Include="Domain\Models\RBBarChartModel.cs" />
+    <Compile Include="Domain\Models\DateModel.cs" />
+    <Compile Include="Domain\Models\JsonResponseModels.cs" />
+    <Compile Include="Domain\Models\LayoutModel.cs" />
+    <Compile Include="Domain\Models\PaginationModel.cs" />
+    <Compile Include="Domain\Models\ReportCarouselModels.cs" />
+    <Compile Include="Domain\Models\RequestAccessModel.cs" />
+    <Compile Include="Domain\Models\SharePointTicketModel.cs" />
+    <Compile Include="Domain\Models\UserModels.cs" />
+    <Compile Include="Domain\Models\ViewModel.cs" />
+    <Compile Include="Email\EmailService.cs" />
+    <Compile Include="Encryption\BlowFish.cs" />
+    <Compile Include="Encryption\Hash.cs" />
+    <Compile Include="ErrorHandling\ErrorHandler.cs" />
+    <Compile Include="Helpers\NHAttributes\CachedAttribute.cs" />
+    <Compile Include="Helpers\NHAttributes\LengthAttribute.cs" />
+    <Compile Include="Helpers\NHAttributes\PropertiesMustMatchAttribute.cs" />
+    <Compile Include="Helpers\NHAttributes\UniqueAttribute.cs" />
+    <Compile Include="Interfaces\BLL\Providers\IAccountProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\ICMOChatProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\IAskBIProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\IGenAIProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\IHomeProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\IRequestAccessProvider.cs" />
+    <Compile Include="Interfaces\BLL\Providers\ISharePointProvider.cs" />
+    <Compile Include="Interfaces\Core\IDataCache.cs" />
+    <Compile Include="Interfaces\Core\IErrorHandler.cs" />
+    <Compile Include="Interfaces\Core\IHash.cs" />
+    <Compile Include="Interfaces\Core\IImageUtilities.cs" />
+    <Compile Include="Interfaces\Core\ILogger.cs" />
+    <Compile Include="Interfaces\Core\IMailService.cs" />
+    <Compile Include="Interfaces\Core\ISettings.cs" />
+    <Compile Include="Interfaces\Core\IUtilities.cs" />
+    <Compile Include="Interfaces\Data\BaseInterfaces\IDbContext.cs" />
+    <Compile Include="Interfaces\Data\BaseInterfaces\IEntityDuplicateChecker.cs" />
+    <Compile Include="Interfaces\Data\BaseInterfaces\IRepository.cs" />
+    <Compile Include="Interfaces\Data\IAPIHelper.cs" />
+    <Compile Include="Interfaces\Data\IFileIO.cs" />
+    <Compile Include="Interfaces\Data\Repositories\IGenAIHistoryRepository.cs" />
+    <Compile Include="Interfaces\Data\Repositories\ICMOChatQuestionsRepository.cs" />
+    <Compile Include="Interfaces\Data\Repositories\ICMOChatHistoryRepository.cs" />
+    <Compile Include="Interfaces\Data\Repositories\IAccessRequestsRepository.cs" />
+    <Compile Include="Interfaces\Data\Repositories\IAskBIHistoryRepository.cs" />
+    <Compile Include="Interfaces\Data\Repositories\IUsersRepository.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\CSVUtlity.cs" />
+    <Compile Include="Utilities\ImageUtilities.cs" />
+    <Compile Include="Utilities\Settings.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client Scripts\mvcfoolproof.unobtrusive.js" />
+    <Content Include="Client Scripts\mvcfoolproof.unobtrusive.min.js" />
+    <Content Include="Client Scripts\MvcFoolproofJQueryValidation.js" />
+    <Content Include="Client Scripts\MvcFoolproofJQueryValidation.min.js" />
+    <Content Include="Client Scripts\MvcFoolproofValidation.js" />
+    <Content Include="Client Scripts\MvcFoolproofValidation.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,7 @@
+﻿@model List<Reports.Core.Domain.Models.CMOChatQuestion>
+
+@foreach (var question in Model)
+{
+    @Html.Partial("_HistoryTrRowPartial", question)
+}
+    

@@ -1,0 +1,120 @@
+<INFO > 
+    <date>2024-06-17 08:09:40,309</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-17 08:13:01,979</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>DABLLTA.CMOChatProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 16.81.247.147:5000</message>
+    <source>System</source>
+    <targetSite>Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-06-17 08:13:33,248</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Unable to connect to the remote server</message>
+    <source>Reports.Data</source>
+    <targetSite>System.String GetResponse(System.String, RequestMethod, System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Data.APIHelper.GetResponse(String uri, RequestMethod requestMethod, NameValueCollection headerElements, NameValueCollection data, String jsonData, String contentType) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Data\APIHelper.cs:line 184
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 138
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></innerExceptionStackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-06-17 08:13:33,249</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/cmochat</errorPath>
+    <rawUrl>/cmochat</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>Unable to connect to the remote server</message>
+    <source>Reports.Data</source>
+    <targetSite>System.String GetResponse(System.String, RequestMethod, System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.String, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Data.APIHelper.GetResponse(String uri, RequestMethod requestMethod, NameValueCollection headerElements, NameValueCollection data, String jsonData, String contentType) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Data\APIHelper.cs:line 184
+   at Reports.BLL.Providers.CMOChatProvider.AskQuestion(Int64 userId, String question, Boolean displaySQL, Boolean isPredefinedQuestion) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\CMOChatProvider.cs:line 138
+    ]]></stackTrace>
+    <innerExceptionStackTrace><![CDATA[
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+    ]]></innerExceptionStackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-06-17 08:53:01,241</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-17 08:55:12,177</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-17 09:00:47,553</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-17 09:23:04,009</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-17 09:32:37,005</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-17 09:34:45,633</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+<error>
+    <datetime>06/17/2024 04:34:25 PM</datetime>
+    <user>
+        <username>Arbi Stepanian</username>
+        <useremail>stepanian@hpe.com</username>
+    </user><errorPath>/requestaccess/updaterequest</errorPath>
+    <rawUrl>/requestaccess/updaterequest?Length=13</rawUrl>
+    <className>UI.RequestAccessController</className>
+    <methodName>UpdateRequest</methodName>
+    <params>
+    </params>
+    <message>Error</message>
+    <source>Reports.UI</source>
+    <targetSite>System.Web.Mvc.ActionResult UpdateRequest(Reports.Core.Domain.Models.UserRequest)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.UI.Controllers.RequestAccessController.UpdateRequest(UserRequest model)
+    ]]></stackTrace></error>
+</ERROR>
+<INFO > 
+    <date>2024-06-17 10:15:28,134</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

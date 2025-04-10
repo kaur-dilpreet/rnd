@@ -1,0 +1,754 @@
+<INFO > 
+    <date>2023-08-21 07:48:18,790</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-21 08:08:58,134</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 08:48:06,113</date> 
+    <thread>15</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform?UniqueId=f70f852d-5bf2-49fe-a891-91ddec670d72&Title=demand&SQLQuery=select+*+from+hpcom_usr.product_demand_steering_input_table&PrimaryKey=File_Name&ConnectionId=fd05fdcd-83a6-4275-8ec5-86c1a7b32585&Connection%5BUniqueId%5D=fd05fdcd-83a6-4275-8ec5-86c1a7b32585&Connection%5BHost%5D=mrkt2-vrt-pro.its.hpecorp.net&Connection%5BDatabase%5D=shr2_vrt_pro&Connection%5BUsername%5D=srvc_gbl_mkt_cdr&Connection%5BPassword%5D=Gl!Np*AL!2112&Connection%5BTableName%5D=&Connection%5BHasTableName%5D=true&Columns%5B%5D=File_Name&Columns%5B%5D=PLATFORM&Columns%5B%5D=P%2FN&Columns%5B%5D=DESCRIPTION&Captions%5B%5D=File_Name&Captions%5B%5D=PLATFORM&Captions%5B%5D=P%2FN&Captions%5B%5D=DESCRIPTION&_=1692632569855</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 08:48:06,113</date> 
+    <thread>45</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform?UniqueId=f70f852d-5bf2-49fe-a891-91ddec670d72&Title=demand&SQLQuery=select+*+from+hpcom_usr.product_demand_steering_input_table&PrimaryKey=File_Name&ConnectionId=fd05fdcd-83a6-4275-8ec5-86c1a7b32585&Connection%5BUniqueId%5D=fd05fdcd-83a6-4275-8ec5-86c1a7b32585&Connection%5BHost%5D=mrkt2-vrt-pro.its.hpecorp.net&Connection%5BDatabase%5D=shr2_vrt_pro&Connection%5BUsername%5D=srvc_gbl_mkt_cdr&Connection%5BPassword%5D=Gl!Np*AL!2112&Connection%5BTableName%5D=&Connection%5BHasTableName%5D=true&Columns%5B%5D=File_Name&Columns%5B%5D=PLATFORM&Columns%5B%5D=P%2FN&Columns%5B%5D=DESCRIPTION&Captions%5B%5D=File_Name&Captions%5B%5D=PLATFORM&Captions%5B%5D=P%2FN&Captions%5B%5D=DESCRIPTION&_=1692632569854</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-21 08:49:29,905</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-21 09:10:42,636</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 09:11:11,830</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 479
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:11:17,156</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 479
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:11:50,946</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 479
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:12:16,768</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform?uniqueId=00000000-0000-0000-0000-000000000000&connectionId=00000000-0000-0000-0000-000000000000&_=1692634267635</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:13:07,500</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:13:47,009</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:14:08,404</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:16:21,558</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ")"</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:16:38,043</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:17:01,508</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:18:13,729</date> 
+    <thread>30</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/GetDataSourceColumnNames</errorPath>
+    <rawUrl>/mart/GetDataSourceColumnNames</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>GetDataSourceColumnNames</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>System.Collections.Generic.List`1[System.String] GetColumnNames(Reports.Core.Domain.Models.VerticaConnectionModel, System.String)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.GetColumnNames(VerticaConnectionModel connection, String sqlQuery) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 364
+   at Reports.UI.Controllers.MARTController.GetDataSourceColumnNames(VerticaConnectionModel connection, String sqlQuery)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 09:45:35,489</date> 
+    <thread>56</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/datasourceform</errorPath>
+    <rawUrl>/mart/datasourceform?uniqueId=00000000-0000-0000-0000-000000000000&connectionId=00000000-0000-0000-0000-000000000000&_=1692636323627</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-21 10:33:40,143</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 10:37:03,092</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692639419713</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetMARTReportDesignModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Error parsing boolean value. Path '', line 1, position 1.</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>Void ParseTrue()</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.JsonTextReader.ParseTrue()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Reports.Core.Utilities.Utilities.Deserialize[T](String serializedString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 245
+   at Reports.BLL.Providers.MARTProvider.GetMARTReportDesignModel(Int64 userId, Guid reportId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 313
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 10:37:23,164</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692639419713</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 11:11:17,869</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692639419716</rawUrl>
+    <className>DABLLTA.MARTProvider</className>
+    <methodName>GetMARTReportDesignModel</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>Error parsing boolean value. Path '', line 1, position 1.</message>
+    <source>Newtonsoft.Json</source>
+    <targetSite>Void ParseTrue()</targetSite>
+    <stackTrace><![CDATA[
+   at Newtonsoft.Json.JsonTextReader.ParseTrue()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Reports.Core.Utilities.Utilities.Deserialize[T](String serializedString) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 245
+   at Reports.BLL.Providers.MARTProvider.GetMARTReportDesignModel(Int64 userId, Guid reportId) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 313
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 11:11:21,740</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692639419716</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-21 11:53:25,257</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-21 11:55:25,083</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-21 12:00:07,266</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 12:02:34,220</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/checkconnection</errorPath>
+    <rawUrl>/mart/checkconnection</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 12:06:27,494</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692644679328</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 12:07:10,851</date> 
+    <thread>35</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692644679330</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 12:07:36,211</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692644679332</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 12:16:59,002</date> 
+    <thread>45</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/reportdesign</errorPath>
+    <rawUrl>/mart/reportdesign?uniqueId=f0ef15c9-780d-451b-ba31-9e41e25e2052&_=1692645404465</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-21 17:10:37,028</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2023-08-21 18:33:29,829</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 18:35:31,245</date> 
+    <thread>12</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 477
+   at Reports.UI.Controllers.MARTController.LoadReportTable(List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 606
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-21 18:41:57,191</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-21 18:42:11,686</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:42:40,642</date> 
+    <thread>16</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>Application</className>
+    <methodName>Application_Error</methodName>
+    <params>
+    </params>
+    <message>ErrorEmail does not exist in AppSettings</message>
+    <source>Reports.Core</source>
+    <targetSite>System.String GetSettings(AppSettings)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.Core.Utilities.Settings.GetSettings(AppSettings setting) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Settings.cs:line 19
+   at Reports.UI.Controllers.BaseController.OnException(ExceptionContext filterContext) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\BaseController.cs:line 135
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:44:50,889</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 482
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:53:51,903</date> 
+    <thread>26</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 482
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:55:33,036</date> 
+    <thread>45</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Column reference "Account_Name" is ambiguous</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:56:00,322</date> 
+    <thread>49</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>BLL.Utilities</className>
+    <methodName>RenderPartialViewToString</methodName>
+    <params>
+        <param name="controller"><![CDATA[Reports.UI.Controllers.MARTController,_ReportPartial]]></param>
+        <param name="model"><![CDATA[{"Captions":["sls_tty_id","Name","PTB_Reco"],"Columns":["sls_tty_id","Name","PTB_Reco"],"DataTable":[{"sls_tty_id":"542567428","Name":"Propensity2Security","PTB_Reco":"RED"},{"sls_tty_id":"760146","Name":"Propensity2Ezmeral","PTB_Reco":"RED"},{"sls_tty_id":"740501","Name":"Propensity2HYDCLD","PTB_Reco":"RED"},{"sls_tty_id":"515687615","Name":"Propensity23Par","PTB_Reco":"RED"},{"sls_tty_id":"517598","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"86315","Name":"Propensity2cray","PTB_Reco":"RED"},{"sls_tty_id":"502998","Name":"Propensity2sdflex","PTB_Reco":"RED"},{"sls_tty_id":"518148033","Name":"Propensity2Apollo","PTB_Reco":"RED"},{"sls_tty_id":"519588954","Name":"Propensity2Security","PTB_Reco":"RED"},{"sls_tty_id":"163888","Name":"Propensity2mapr","PTB_Reco":"RED"},{"sls_tty_id":"296421","Name":"Propensity2AID","PTB_Reco":"SILVER"},{"sls_tty_id":"448211","Name":"Propensity2alletra","PTB_Reco":"RED"},{"sls_tty_id":"518347564","Name":"Propensity2Bluedata","PTB_Reco":"RED"},{"sls_tty_id":"326211","Name":"Propensity2sdflex","PTB_Reco":"RED"},{"sls_tty_id":"60289","Name":"Propensity2HPCAI","PTB_Reco":"SILVER"},{"sls_tty_id":"288426","Name":"Propensity2Primera","PTB_Reco":"RED"},{"sls_tty_id":"103712","Name":"Propensity2Storage","PTB_Reco":"GOLD"},{"sls_tty_id":"551607448","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"806402","Name":"Propensity2GreenlakeNL","PTB_Reco":"RED"},{"sls_tty_id":"106525","Name":"Propensity2ns","PTB_Reco":"RED"},{"sls_tty_id":"259379","Name":"propensity2server","PTB_Reco":"RED"},{"sls_tty_id":"529387428","Name":"propensity2server","PTB_Reco":"RED"},{"sls_tty_id":"519467753","Name":"Propensity2Ezmeral","PTB_Reco":"RED"},{"sls_tty_id":"421653","Name":"Propensity2HPCAI","PTB_Reco":"RED"},{"sls_tty_id":"98613","Name":"Propensity2Apollo","PTB_Reco":"GOLD"},{"sls_tty_id":"306693","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"451368","Name":"Propensity2Attach","PTB_Reco":"RED"},{"sls_tty_id":"240898","Name":"Propensity2Greenlake","PTB_Reco":"BRONZE"},{"sls_tty_id":"517367444","Name":"Propensity2Greenlake","PTB_Reco":"BRONZE"},{"sls_tty_id":"319525","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"87221","Name":"Propensity2alletra","PTB_Reco":"RED"},{"sls_tty_id":"312343","Name":"Propensity2Ezmeral","PTB_Reco":"RED"},{"sls_tty_id":"303490","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"61812","Name":"Propensity2alletra","PTB_Reco":"SILVER"},{"sls_tty_id":"507387871","Name":"Propensity2mapr","PTB_Reco":"RED"},{"sls_tty_id":"313852","Name":"greenlake_potential_index","PTB_Reco":"Tier 3"},{"sls_tty_id":"106936","Name":"Propensity2TPI","PTB_Reco":"RED"},{"sls_tty_id":"93243","Name":"Propensity2Greenlake","PTB_Reco":"BRONZE"},{"sls_tty_id":"552627566","Name":"Propensity2sdflex","PTB_Reco":"RED"},{"sls_tty_id":"310042","Name":"Propensity2TPI","PTB_Reco":"GOLD"},{"sls_tty_id":"78652","Name":"Propensity2HyperConverged","PTB_Reco":"RED"},{"sls_tty_id":"451010","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"551907704","Name":"Propensity2cray","PTB_Reco":"RED"},{"sls_tty_id":"549767593","Name":"Propensity23Par","PTB_Reco":"RED"},{"sls_tty_id":"232206","Name":"Propensity2Bluedata","PTB_Reco":"RED"},{"sls_tty_id":"500676297","Name":"Propensity23Par","PTB_Reco":"RED"},{"sls_tty_id":"63331","Name":"Propensity2HyperConverged","PTB_Reco":"RED"},{"sls_tty_id":"244007","Name":"Propensity2Attach","PTB_Reco":"RED"},{"sls_tty_id":"518188101","Name":"Propensity2AID","PTB_Reco":"RED"},{"sls_tty_id":"432310","Name":"Propensity2HYDCLD","PTB_Reco":"RED"},{"sls_tty_id":"177039","Name":"Propensity2AID","PTB_Reco":"GOLD"},{"sls_tty_id":"258732","Name":"Propensity2Synergy","PTB_Reco":"RED"},{"sls_tty_id":"535287439","Name":"Propensity2Primera","PTB_Reco":"RED"},{"sls_tty_id":"552507483","Name":"Propensity23Par","PTB_Reco":"RED"},{"sls_tty_id":"302088","Name":"Propensity2Storage","PTB_Reco":"SILVER"},{"sls_tty_id":"329380","Name":"Propensity2TPI","PTB_Reco":"RED"},{"sls_tty_id":"144766","Name":"Propensity2MCS","PTB_Reco":"GOLD"},{"sls_tty_id":"500503269","Name":"Propensity2Primera","PTB_Reco":"RED"},{"sls_tty_id":"674952","Name":"propensity2server","PTB_Reco":"SILVER"},{"sls_tty_id":"519447599","Name":"Propensity2AID","PTB_Reco":"RED"},{"sls_tty_id":"205489","Name":"Propensity2Storage","PTB_Reco":"GOLD"},{"sls_tty_id":"79739","Name":"Propensity2ns","PTB_Reco":"SILVER"},{"sls_tty_id":"340092","Name":"Propensity23Par","PTB_Reco":"RED"},{"sls_tty_id":"327633","Name":"Propensity2NWI","PTB_Reco":"RED"},{"sls_tty_id":"322725","Name":"Propensity2Security","PTB_Reco":"RED"},{"sls_tty_id":"519667838","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"774238","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"303591","Name":"Propensity2ComputeVolume","PTB_Reco":"SILVER"},{"sls_tty_id":"509447430","Name":"Propensity2Synergy","PTB_Reco":"RED"},{"sls_tty_id":"411335","Name":"Propensity2Storage","PTB_Reco":"SILVER"},{"sls_tty_id":"500218984","Name":"Propensity2ns","PTB_Reco":"RED"},{"sls_tty_id":"316669","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"295318","Name":"Propensity2Primera","PTB_Reco":"RED"},{"sls_tty_id":"279810","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"314519","Name":"propensity2software","PTB_Reco":"RED"},{"sls_tty_id":"412412","Name":"Propensity2Ezmeral","PTB_Reco":"RED"},{"sls_tty_id":"519917460","Name":"Propensity2ns","PTB_Reco":"RED"},{"sls_tty_id":"500712404","Name":"Propensity2TPI","PTB_Reco":"RED"},{"sls_tty_id":"249566","Name":"Propensity2HYDCLD","PTB_Reco":"GOLD"},{"sls_tty_id":"848027","Name":"Propensity2Security","PTB_Reco":"RED"},{"sls_tty_id":"335143","Name":"Propensity2HYDCLD","PTB_Reco":"RED"},{"sls_tty_id":"519627816","Name":"Propensity2HW","PTB_Reco":"RED"},{"sls_tty_id":"59724","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"506907461","Name":"Propensity2Gen11","PTB_Reco":"GOLD"},{"sls_tty_id":"379257","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"180561","Name":"Propensity2Apollo","PTB_Reco":"GOLD"},{"sls_tty_id":"58657","Name":"propensity2server","PTB_Reco":"SILVER"},{"sls_tty_id":"169311","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"324794","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"300994","Name":"Propensity2HW","PTB_Reco":"SILVER"},{"sls_tty_id":"548127697","Name":"Propensity2AID","PTB_Reco":"SILVER"},{"sls_tty_id":"500821837","Name":"Propensity2AID","PTB_Reco":"RED"},{"sls_tty_id":"287967","Name":"Propensity2GMS","PTB_Reco":"RED"},{"sls_tty_id":"347588","Name":"Propensity2Bluedata","PTB_Reco":"RED"},{"sls_tty_id":"167865","Name":"Propensity2TPI","PTB_Reco":"RED"},{"sls_tty_id":"297047","Name":"Propensity2sdflex","PTB_Reco":"RED"},{"sls_tty_id":"519608890","Name":"Propensity2cray","PTB_Reco":"RED"},{"sls_tty_id":"802420","Name":"Propensity2HyperConverged","PTB_Reco":"RED"},{"sls_tty_id":"180315","Name":"Propensity2AID","PTB_Reco":"RED"},{"sls_tty_id":"513578843","Name":"Propensity2Apollo","PTB_Reco":"RED"}]}]]></param>
+    </params>
+    <message>Value cannot be null.
+Parameter name: view</message>
+    <source>System.Web.Mvc</source>
+    <targetSite>Void .ctor(System.Web.Mvc.ControllerContext, System.Web.Mvc.IView, System.Web.Mvc.ViewDataDictionary, System.Web.Mvc.TempDataDictionary, System.IO.TextWriter)</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Mvc.ViewContext..ctor(ControllerContext controllerContext, IView view, ViewDataDictionary viewData, TempDataDictionary tempData, TextWriter writer)
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 387
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:58:13,404</date> 
+    <thread>45</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 482
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:58:37,054</date> 
+    <thread>48</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 482
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 18:59:45,174</date> 
+    <thread>44</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 482
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 19:12:32,945</date> 
+    <thread>41</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>System.Data</source>
+    <targetSite>System.Data.DataTable MergeSchema(System.Data.DataTable)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 19:15:50,484</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 19:17:30,046</date> 
+    <thread>41</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-21 19:18:41,172</date> 
+    <thread>34</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model)
+    ]]></stackTrace>
+</ERROR>

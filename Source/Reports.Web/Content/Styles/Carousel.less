@@ -1,0 +1,187 @@
+﻿@import url(Colors.less);
+
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0px 44px;
+}
+
+.carousel .blocksWrapper {
+    overflow: hidden;
+    height: 330px;
+    float: left;
+    position: relative;
+}
+
+.carousel .arrows {
+    position: relative;
+    float: left;
+    display: none;
+    width: 40px;
+    height: 70px;
+    min-width: 40px;
+    top: 130px;
+    background: url(../Images/arrows.png) no-repeat top left;
+    background-position-x: -40px;
+}
+
+.carousel .leftArrow {
+    margin-right: 40px;
+    background-position-y: -70px;
+}
+
+.carousel .leftArrow:hover {
+    background-position-x: 0px;
+}
+
+.carousel .rightArrow {
+    margin-left: 40px;
+}
+
+.carousel .rightArrow:hover {
+    background-position-x: 0px;
+}
+
+.carousel .arrows img {
+    width: 40px;
+    height: 70px;
+}
+
+.reportsCarousel {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.reportsCarousel h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #424242;
+}
+
+.reportsCarousel.empty {
+    padding: 0px 70px;
+}
+
+.reportsCarousel .emptyFavorites {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border: 1px #d9d9d9 solid;
+    padding: 24px 0px;
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.reportsCarousel .emptyFavorites img {
+    position: relative;
+    top: 8px;
+}
+
+.reportsCarousel .blocks {
+    height: 280px;
+    position: absolute;
+    overflow: visible
+}
+
+.block {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+    min-width: 0px;
+    min-height: 0px;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, .12);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.block:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, .24);
+}
+
+.block * {
+    text-decoration: none;
+}
+
+.block.disabled a {
+    cursor: default;
+}
+
+.block .rbcontextmenuBtn {
+    position: absolute;
+    top: 124px;
+    right: 4px;
+}
+
+.block .logo {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 14px;
+    overflow: hidden
+}
+
+.block .logo img {
+    width: 100%;
+}
+
+.block h3 {
+    padding: 0 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 28px 0px 16px 0px;
+    white-space: pre-wrap;
+    width: calc(100% - 32px);
+}
+
+.block.disabled {
+    background-color: #eee;
+    cursor: default;
+}
+
+.block.disabled:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, .12);
+}
+
+.block p {
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0px;
+    color: #000;
+    letter-spacing: 0.5px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-line;
+    position: relative;
+    top: -20px;
+}
+
+.block.disabled .logo {
+}
+
+.block .blockFooter {
+    position: absolute;
+    width: 178px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #fff;
+    height: 10px;
+}
+
+.block.disabled .blockFooter {
+    background-color: #eee;
+}

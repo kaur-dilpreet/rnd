@@ -1,0 +1,50 @@
+﻿@model Reports.Core.Domain.Models.DataFilter
+
+<div class="reportFilter @Model.FilterType">
+    <div class="filter" data-column="@Model.ColumnName">
+        <div class="caption">
+            @Model.Caption
+        </div>
+        <span class="arrow left"></span>
+        <span class="arrow right"></span>
+        <span class="arrow down"></span>
+        <div class="itemsSelected">
+            <span>0</span>
+        </div>
+        @if (Model.FilterType == Reports.Core.Domain.Enumerations.FilterType.CheckBoxList)
+        {
+            <div class="values hideOnClick">
+                <div class="valuesWrapper scrollbar-outer">
+                    @for (Int32 i = 0; i < Model.Values.Count; i++)
+                    {
+                        if (!String.IsNullOrEmpty(Model.Values[i]))
+                        {
+                            String masterValue = String.Empty;
+
+                            if (Model.MasterValues.Count > 0)
+                            {
+                                masterValue = Model.MasterValues[i];
+                            }
+
+                            <div class="value" data-master="@Model.Master" data-detail="@Model.Detail" data-mastervalue="@masterValue" data-value="@(String.IsNullOrEmpty(Model.Values[i]) ? "NULL" : Model.Values[i])"><span><input type="checkbox" /></span><span>@(String.IsNullOrEmpty(Model.Values[i]) ? "N/A" : Model.Values[i])</span></div>
+                        }
+                    }
+                </div>
+            </div>
+        }
+        else if (Model.FilterType == Reports.Core.Domain.Enumerations.FilterType.CSV)
+        {
+            <div class="values hideOnClick">
+                <div class="csvFilterType">
+                    <label>Include</label><input type="checkbox" class="switchCheck" /><label>Exclude</label>
+                </div>
+                <div class="filterValues">
+                    <textarea></textarea>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+        
+   

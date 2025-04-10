@@ -1,0 +1,126 @@
+﻿@using System.Text;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @RenderSection("Styles", false)
+    <title>@ViewBag.Title</title>
+
+    <script>
+        var bms = {};
+        bms.baseUrl = '@String.Format("{0}", Url.Content("~/"))';
+        bms.generalErrorMessage = 'An error happened during processing or your request.';
+        bms.controller = '@this.ViewContext.RouteData.Values["controller"].ToString().ToLower()';
+        bms.action = '@this.ViewContext.RouteData.Values["action"].ToString().ToLower()';
+    </script>
+</head>
+<body class="@(System.Web.HttpContext.Current.Request.Url.AbsolutePath.ToLower().Equals("/") || System.Web.HttpContext.Current.Request.Url.AbsolutePath.ToLower().Contains("home/index") ? "homePage" : String.Empty)">
+    <header>
+        <div id="logo">
+            <a href="@Url.Content("~/")"><svg aria-label="Hpe" viewBox="0 0 48 24" class="StyledIcon-sc-ofa7kd-0 inUyNZ"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6h44v12H2V6zm3 3h38v6H5V9z" fill="#00C781"></path></svg><span>HPE</span><span class="serviceName">@ViewBag.Title</span></a>
+            @if (!String.IsNullOrEmpty(ViewBag.Subtitle))
+            {
+                <h2 class="pageSubtitle">@(new MvcHtmlString(ViewBag.Subtitle))</h2>
+            }
+        </div>
+
+        <div class="headerButtons">
+            <ul id="buttons">
+                <li>
+                    <a id="menu" href="#" title="Menu"><svg aria-label="AppsRounded" viewBox="0 0 24 24" class="StyledIcon-sc-ofa7kd-0 hiqyRz"><path stroke="#000" stroke-linejoin="round" stroke-width="2" d="M3 6.2c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C4.52 3 5.08 3 6.2 3h.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C10 4.52 10 5.08 10 6.2v.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C8.48 10 7.92 10 6.8 10h-.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C3 8.48 3 7.92 3 6.8v-.6zm11 0c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C15.52 3 16.08 3 17.2 3h.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C21 4.52 21 5.08 21 6.2v.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C19.48 10 18.92 10 17.8 10h-.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C14 8.48 14 7.92 14 6.8v-.6zm-11 11c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C4.52 14 5.08 14 6.2 14h.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C10 15.52 10 16.08 10 17.2v.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C8.48 21 7.92 21 6.8 21h-.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C3 19.48 3 18.92 3 17.8v-.6zm11 0c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C15.52 14 16.08 14 17.2 14h.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C21 15.52 21 16.08 21 17.2v.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874C19.48 21 18.92 21 17.8 21h-.6c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C14 19.48 14 18.92 14 17.8v-.6z"></path></svg></a>
+                </li>
+                <li>
+                    <span class="current-user">@String.Format("{0}{1}", Reports.Core.Utilities.Utilities.GetLoggedInUser().FirstName.Substring(0, 1), Reports.Core.Utilities.Utilities.GetLoggedInUser().LastName.Substring(0, 1))</span>
+                </li>
+            </ul>
+        </div>
+        @{
+            Boolean isAdmin = false;
+            if (Reports.Core.Utilities.Utilities.GetLoggedInUser() != null)
+            {
+                if (Reports.Core.Utilities.Utilities.GetLoggedInUser().IsInRole(Reports.Core.Domain.Enumerations.Role_Admin_PowerUser))
+                {
+                    isAdmin = true;
+                }
+            }
+        }
+        <div id="mainMenu" class="@(isAdmin ? "adminUser" : String.Empty)">
+            <ul>
+                @*<li class="menuItem"><a href="@Url.Content("~/reports")">Reports</a></li>*@
+                @if (Reports.Core.Utilities.Utilities.GetLoggedInUser().AskBIAccess)
+                {
+                    <li class="menuItem"><a href="@Url.Content("~/askbi")">Ask BI</a></li>
+                }
+                @if (Reports.Core.Utilities.Utilities.GetLoggedInUser().CMOChatAccess)
+                {
+                    <li class="menuItem"><a href="@Url.Content("~/cmochat")">CMO chat</a></li>
+                }
+                @*@if (Reports.Core.Utilities.Utilities.GetLoggedInUser().SDRAIAccess)
+                {
+                    <li class="menuItem"><a href="@Url.Content("~/sdrai")">SDR AI</a></li>
+                }
+                @if (Reports.Core.Utilities.Utilities.GetLoggedInUser().ChatGPIAccess)
+                {
+                    <li class="menuItem"><a href="@Url.Content("~/chatgpi")">Chat GPI</a></li>
+                }*@
+                @if (isAdmin)
+                {
+                    <li class="menuItem topSeparator"><a href="@Url.Content("~/requestaccess/requests")">Requests</a></li>
+                }
+            </ul>
+        </div>
+    </header>
+    @{
+        Boolean hasTopNews = false;
+        Boolean resourcePage = true;
+    }
+
+    <div id="mainContent" class="@(!hasTopNews && !resourcePage ? "noMarquee" : String.Empty)">
+        <div id="mainContentWrapper">
+            @RenderBody()
+        </div>
+    </div>
+
+
+    @RenderSection("Scripts", required: false)
+
+    @if (TempData["Message"] != null && !String.IsNullOrEmpty(TempData["Message"].ToString()))
+    {
+        <script>
+            bms.showTempMessage('@TempData["Message"].ToString()', 60);
+        </script>
+
+        TempData["Message"] = String.Empty;
+    }
+
+    @if (TempData["ErrorMessage"] != null && !String.IsNullOrEmpty(TempData["ErrorMessage"].ToString()))
+    {
+        <script>
+            bms.showErrorMessage('@TempData["ErrorMessage"].ToString()');
+        </script>
+
+        TempData["ErrorMessage"] = String.Empty;
+    }
+
+        <footer>
+            <div class="copyright">
+                © @String.Format("{0:yyyy}", DateTime.Now) Hewlett Packard Enterprise Development LP
+            </div>
+
+            @RenderSection("FooterText", false)
+        </footer>
+
+    <div id="darkMask"></div>
+    <div id="clearMask"></div>
+    <div id="mainLoader"><div class="spinner"></div></div>
+    
+</body>
+</html>

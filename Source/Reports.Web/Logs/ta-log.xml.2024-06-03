@@ -1,0 +1,63 @@
+<INFO > 
+    <date>2024-06-03 09:35:00,267</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-03 10:27:21,312</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-06-03 10:38:46,741</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/chatgpi/askquestion</errorPath>
+    <rawUrl>/chatgpi/askquestion?Length=7</rawUrl>
+    <className>DABLLTA.ChatGPIProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>This operation is not supported.</message>
+    <source>System</source>
+    <targetSite>Int64 Seek(Int64, System.IO.SeekOrigin)</targetSite>
+    <stackTrace><![CDATA[
+   at System.IO.Compression.DeflateStream.Seek(Int64 offset, SeekOrigin origin)
+   at Reports.BLL.Providers.ChatGPIProvider.AskQuestion(Int64 userId, String question)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2024-06-03 10:39:22,037</date> 
+    <thread>7</thread> 
+    <logger>TA</logger>
+    <errorPath>/chatgpi/askquestion</errorPath>
+    <rawUrl>/chatgpi/askquestion?Length=7</rawUrl>
+    <className>DABLLTA.ChatGPIProvider</className>
+    <methodName>AskQuestion</methodName>
+    <params>
+        <param name="userId"><![CDATA[1]]></param>
+    </params>
+    <message>This operation is not supported.</message>
+    <source>System</source>
+    <targetSite>Int64 Seek(Int64, System.IO.SeekOrigin)</targetSite>
+    <stackTrace><![CDATA[
+   at System.IO.Compression.DeflateStream.Seek(Int64 offset, SeekOrigin origin)
+   at Reports.BLL.Providers.ChatGPIProvider.AskQuestion(Int64 userId, String question)
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-06-03 10:47:53,012</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-03 13:51:41,128</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-06-03 14:06:38,437</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >

@@ -1,0 +1,61 @@
+<INFO > 
+    <date>2024-05-16 09:00:45,941</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2024-05-16 09:02:46,480</date> 
+    <thread>13</thread> 
+    <logger>TA</logger>
+    <errorPath>/sdrai/askquestion</errorPath>
+    <rawUrl>/sdrai/askquestion</rawUrl>
+    <className>BLL.Utilities</className>
+    <methodName>RenderPartialViewToString</methodName>
+    <params>
+        <param name="controller"><![CDATA[Reports.UI.Controllers.SDRAIController,_AnswerPartial]]></param>
+        <param name="model"><![CDATA[{"qid":"280","lead_id":"LEAD-0010641617","uid":"americas:stepanar","answer":"Unable to answer. Please try again.","time_taken":2.020613350905478,"data_validation":[],"message":null}]]></param>
+    </params>
+    <message>C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Web\Views\sdrai\_AnswerPartial.cshtml(59): error CS1061: 'SDRQuestionResponse' does not contain a definition for 'UniqueId' and no accessible extension method 'UniqueId' accepting a first argument of type 'SDRQuestionResponse' could be found (are you missing a using directive or an assembly reference?)</message>
+    <source>System.Web</source>
+    <targetSite>System.CodeDom.Compiler.CompilerResults Compile()</targetSite>
+    <stackTrace><![CDATA[
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Reports.Core.Utilities.Utilities.RenderPartialViewToString(Controller controller, String viewName, Object model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.Core\Utilities\Utilities.cs:line 408
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2024-05-16 09:03:37,222</date> 
+    <thread>6</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >
+<INFO > 
+    <date>2024-05-16 09:05:08,812</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-16 09:11:24,433</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-16 09:13:52,345</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<INFO > 
+    <date>2024-05-16 09:15:29,017</date> 
+    <thread>9</thread> 
+    <logger>TA</logger><message>{"message":"202 OK"}
+</message>
+</INFO >

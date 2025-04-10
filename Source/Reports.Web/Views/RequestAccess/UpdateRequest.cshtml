@@ -1,0 +1,54 @@
+﻿@model Reports.Core.Domain.Models.UserRequest
+
+@{
+    ViewBag.Title = "Reports - Request Access";
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/RequestAccess")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/RequestAccess")
+}
+
+<div id="updateRequestPage" class="adminPage">
+    @using (Ajax.BeginForm("UpdateRequest", "RequestAccess", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        OnBegin = "bms.formBegin('frmUpdateRequest')",
+        OnComplete = "bms.frmUpdateRequestComplete(xhr, 'frmUpdateRequest')"
+    },
+
+            new { id = "frmUpdateRequest" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <p>
+            You don't have permission to access the requested resource. Please update your access request.
+        </p>
+
+        <h2>Update Access Request</h2>
+
+        <div class="formRow">
+            <div class="textBox" id="divAskBIAccess">
+                @Html.CheckBoxFor(m => m.AskBIAccess) @Html.LabelFor(m => m.AskBIAccess)
+            </div>
+            <div class="textBox" id="divCMOChatAccess">
+                @Html.CheckBoxFor(m => m.CMOChatAccess) @Html.LabelFor(m => m.CMOChatAccess)
+            </div>
+            <div class="textBox" id="divSDRAIAccess">
+                @Html.CheckBoxFor(m => m.SDRAIAccess) @Html.LabelFor(m => m.SDRAIAccess)
+            </div>
+            <div class="textBox" id="divChatGPIAccess">
+                @Html.CheckBoxFor(m => m.ChatGPIAccess) @Html.LabelFor(m => m.ChatGPIAccess)
+            </div>
+        </div>
+
+        <div class="divSubmit">
+            <input type="submit" class="primaryButton" value="Submit" />
+        </div>
+    }
+</div>

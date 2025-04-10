@@ -1,0 +1,411 @@
+<INFO > 
+    <date>2023-08-22 07:45:31,183</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-22 07:53:55,740</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>System.Data</source>
+    <targetSite>System.Data.DataTable MergeSchema(System.Data.DataTable)</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-22 08:06:23,387</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-22 08:09:06,580</date> 
+    <thread>9</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 502
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:10:26,755</date> 
+    <thread>11</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>Object reference not set to an instance of an object.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 502
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-22 08:12:45,344</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-22 08:13:28,342</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ","</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:13:44,070</date> 
+    <thread>8</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ","</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:25:32,641</date> 
+    <thread>53</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:26:10,441</date> 
+    <thread>6</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:26:46,549</date> 
+    <thread>52</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<INFO > 
+    <date>2023-08-22 08:34:07,730</date> 
+    <thread>1</thread> 
+    <logger>TA</logger><message>Data Worker Initialized</message>
+</INFO >
+<ERROR> 
+    <date>2023-08-22 08:38:08,820</date> 
+    <thread>10</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.BLL\Providers\MARTProvider.cs:line 502
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 08:45:47,582</date> 
+    <thread>33</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 10:00:50,121</date> 
+    <thread>76</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message><target>.primary_key and <source>.primary_key have conflicting properties: DataType property mismatch.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 10:05:49,873</date> 
+    <thread>19</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message><target>.primary_key and <source>.primary_key have conflicting properties: DataType property mismatch.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 10:11:48,226</date> 
+    <thread>57</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message><target>.primary_key and <source>.primary_key have conflicting properties: DataType property mismatch.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 10:17:20,887</date> 
+    <thread>75</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message><target>.primary_key and <source>.primary_key have conflicting properties: DataType property mismatch.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 10:18:59,262</date> 
+    <thread>23</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Syntax error at or near ","</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.PrepareImpl(String sqlQuery, Boolean isBatch)
+   at Vertica.Data.Internal.DataEngine.VDataEngine.Prepare(String sql)
+   at Vertica.Data.Internal.ADO.Net.SCommand.Prepare(Boolean isExecDirect)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:17:40,651</date> 
+    <thread>144</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Could not convert "No (valid) STID" from column Account_Classification_STID.ACCOUNT_ID to an int8</message>
+    <source>Vertica.Data</source>
+    <targetSite>Void FetchChunk(Boolean)</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.Initialize()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.ReadExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.HandleExecuteResponse()
+   at Vertica.Data.Internal.DataEngine.VQueryExecutor.Execute(ExecutionContexts contexts, IWarningListener warningListener)
+   at Vertica.Data.Internal.ADO.Net.SCommand.ExecuteReader(CommandBehavior behavior)
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:21:35,389</date> 
+    <thread>163</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:21:49,464</date> 
+    <thread>161</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:24:53,496</date> 
+    <thread>147</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:25:37,782</date> 
+    <thread>147</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>These columns don't currently have unique values.</message>
+    <source>Reports.BLL</source>
+    <targetSite>Reports.Core.Domain.Models.MARTReportViewModel LoadReportTable(Int64, System.Guid, System.Collections.Generic.List`1[Reports.Core.Domain.Models.MARTDataSourceModel])</targetSite>
+    <stackTrace><![CDATA[
+   at Reports.BLL.Providers.MARTProvider.LoadReportTable(Int64 userId, Guid reportId, List`1 dataSources)
+   at Reports.UI.Controllers.MARTController.LoadReportTable(Guid uniqueId, List`1 model) in C:\Users\stepanar\OneDrive - Hewlett Packard Enterprise\Projects\Active Projects\Reports\Source\Reports.UI\Controllers\MARTControlle.cs:line 608
+    ]]></stackTrace>
+</ERROR>
+<ERROR> 
+    <date>2023-08-22 11:26:24,020</date> 
+    <thread>147</thread> 
+    <logger>TA</logger>
+    <errorPath>/mart/loadreporttable</errorPath>
+    <rawUrl>/mart/loadreporttable</rawUrl>
+    <className>UI.MARTController</className>
+    <methodName>LoadReportTable</methodName>
+    <params>
+    </params>
+    <message>ERROR: Could not convert "No (valid) STID" from column Account_Classification_STID.ACCOUNT_ID to an int8</message>
+    <source>Vertica.Data</source>
+    <targetSite>Vertica.Data.Internal.IO.ResponseMessage ReadExpectedMessage(Vertica.Data.Internal.IO.MessageType[])</targetSite>
+    <stackTrace><![CDATA[
+   at Vertica.Data.Internal.IO.ProtocolStream.ReadExpectedMessage(MessageType[] expected)
+   at Vertica.Data.Internal.DataEngine.VResultSet.FetchChunk(Boolean clearExistingRowCache)
+   at Vertica.Data.Internal.DataEngine.VResultSet.MoveToNextRow()
+   at Vertica.Data.Internal.DataEngine.VResultSet.Move(MoveDirection direction, Int64 offset)
+   at Vertica.Data.Internal.ADO.Net.SDataReader.Read()
+    ]]></stackTrace>
+</ERROR>

@@ -1,0 +1,18 @@
+﻿@model Int32
+
+@{ 
+    Int32 hours = 0;
+    Int32 minutes = 0;
+
+    if (Model < 60)
+    {
+        minutes = Model;
+    }
+    else
+    {
+        hours = (Int32)Math.Floor(Model / 60.0);
+        minutes = Model - hours * 60;
+    }
+}
+
+@String.Format("{0:0#}:{1:0#}", hours, minutes)

@@ -1,0 +1,28 @@
+﻿@model Reports.Core.Domain.Models.HomeModel
+
+@{ 
+    ViewBag.Title = "Reports";
+    ViewBag.Subtitle = String.Empty;
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/Styles/Main")
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/Main")
+}
+
+<div class="adminPage">
+    <div class="pageHeader">
+
+    </div>
+    <div class="reports">
+        @foreach (var carousel in Model.ReportCarousels)
+        {
+            @Html.Partial("_ReportCarouselPartial", carousel)
+        }
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿.rbcontextmenu {
+    border: none;
+    min-width: 100px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.24);
+    z-index: 20;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.rbcontextmenu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    z-index: 10;
+}
+
+.rbcontextmenu ul li {
+    position: relative;
+    width: 100%;
+}
+
+.rbcontextmenu ul li.topSeparator {
+    border-top: 1px #777 solid;
+}
+
+.rbcontextmenu ul li:first-child {
+    border-top: none;
+}
+
+.rbcontextmenu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.rbcontextmenu ul li a,
+.rbcontextmenu ul li span {
+    position: relative;
+    color: #000 !important;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+    padding: 8px 12px;
+    text-align: left;
+    text-decoration: none;
+    min-width: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rbcontextmenu ul li span {
+    cursor: default;
+}
+
+.rbcontextmenu ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.rbcontextmenu.hasCheck ul li {
+    padding-left: 12px;
+}
+
+.rbcontextmenu.hasCheck ul li a {
+    text-align: left;
+}
+
+.rbcontextmenu.hasCheck ul li.selected::after {
+    content: '✔';
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 15px;
+    left: 6px;
+    top: 4px;
+}
+
+.rbcontextmenuBtn {
+    padding: 0px;
+    cursor: pointer !important;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    margin: 0px;
+}
+
+.rbcontextmenuBtn a {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0px 0px 0px 4px;
+    color: #666 !important;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    font-size: 32px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    min-width: 0px;
+    background-color: transparent;
+    /*-webkit-text-stroke: 1px #fff;*/
+}
+
+.rbcontextmenuBtn a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+body.mobile .rbcontextmenuBtn {
+    display: block !important;
+    width: 32px;
+    height: 20px
+}
+
+body.mobile .rbcontextmenuBtn a {
+    font-size: 24px;
+    line-height: 2px;
+    padding-top: 0px;
+    top: -4px;
+    height: 18px
+}

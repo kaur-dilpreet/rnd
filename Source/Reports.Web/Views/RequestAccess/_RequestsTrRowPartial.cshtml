@@ -1,0 +1,101 @@
+﻿@model Reports.Core.Domain.Models.AccessRequestModel
+
+<tr data-uniqueid="@Model.UniqueId">
+    <td class="requestRequester">
+        @Model.Requester.FullName
+        <div class="fieldSeparator"></div>
+        @Model.Requester.Email
+    </td>
+    <td class="requestSubmissionDate">
+        @Html.Partial("_DatePartial", new Reports.Core.Domain.Models.DateModel(Model.CreationDateTime, true))
+    </td>
+    <td class="requestStatus">
+        @if (Model.IsApproved)
+        {
+            <img src="~/Content/Images/check32x32.png" />
+        }
+        else if (Model.IsDenied)
+        {
+            <img src="~/Content/Images/x32x32.png" />
+        }
+        else
+        {
+            <span>Pending</span>
+        }
+    </td>
+    <td class="requestAskBIAccess">
+        @if (Model.Requester.AskBIAccess)
+        {
+            <img src="~/Content/Images/check32x32.png" />
+        }
+        else
+        {
+            <img src="~/Content/Images/x32x32.png" />
+        }
+    </td>
+    <td class="requestCMOChatAccess">
+        @if (Model.Requester.CMOChatAccess)
+        {
+            <img src="~/Content/Images/check32x32.png" />
+        }
+        else
+        {
+            <img src="~/Content/Images/x32x32.png" />
+        }
+    </td>
+    <td class="requestSDRAIAccess">
+        @if (Model.Requester.SDRAIAccess)
+        {
+            <img src="~/Content/Images/check32x32.png" />
+        }
+        else
+        {
+            <img src="~/Content/Images/x32x32.png" />
+        }
+    </td>
+    <td class="requestChatGPIAccess">
+        @if (Model.Requester.ChatGPIAccess)
+        {
+            <img src="~/Content/Images/check32x32.png" />
+        }
+        else
+        {
+            <img src="~/Content/Images/x32x32.png" />
+        }
+    </td>
+    <td class="requestComment">
+        @Model.DenyReason
+    </td>
+    <td class="requestResponder">
+        @Model.Responder.FullName
+    </td>
+    <td class="requestResponseDate">
+        @if (Model.ResponseDateTime.HasValue)
+        {
+            @Html.Partial("_DatePartial", new Reports.Core.Domain.Models.DateModel(Model.ResponseDateTime, true))
+        }
+    </td>
+    <td class="actions">
+        <div class="rbcontextmenuBtn" data-menuid="contextmenu-@Model.UniqueId"><a href="#">...</a></div>
+        <div class="rbcontextmenu" id="contextmenu-@Model.UniqueId">
+            <ul class="contextMenu">
+                @if (!Model.IsApproved)
+                {
+                    <li>
+                        <a href="#" class="changeAccessLevel">Approve</a>
+                    </li>
+                }
+                @if (!Model.IsDenied)
+                {
+                    <li>
+                        <a href="#" class="changeAccessLevel">Change Access Level</a>
+                    </li>
+                    <li>
+                        <a href="#" class="deny">Remove Access</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </td>
+</tr>
+        

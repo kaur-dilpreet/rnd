@@ -1,0 +1,1 @@
+﻿select * from hpcom_usr.src_stid_ptb_adobe_audience_manager_dump limit 1000

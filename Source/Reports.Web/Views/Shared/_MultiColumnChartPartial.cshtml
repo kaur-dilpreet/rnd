@@ -1,0 +1,283 @@
+﻿@model Reports.Core.Domain.Models.MultiColumnChartModel
+
+@{ 
+    Model.ContainerId = String.Format("{0}_{1}", Model.ContainerId, Guid.NewGuid().ToString().Replace("-", "_"));
+}
+
+<script type="text/javascript">
+    bms.load_@Model.ContainerId = function() {
+
+        var categories_@Model.ContainerId = [
+            @foreach(String key in Model.Categories)
+                {
+                    <text>
+                        '@key',
+                    </text>
+                }
+        ];
+
+        bms.@Model.ContainerId = Highcharts.chart('@Model.ContainerId', {
+            chart: {
+                type: '@Model.ChartType',
+                borderColor: '@Model.BorderColor',
+                backgroundColor: '@Model.BackgroundColor',
+                shadow: false,
+                plotBorderColor: '@Model.BackgroundColor',
+                plotBorderWidth: 0,
+                borderWidth: @Model.BorderWidth,
+                spacingLeft: @Model.PaddingLeft,
+                spacingBottom: @Model.PaddingBottom,
+                spacingRight: @Model.PaddingRight,
+                spacingTop: @Model.PaddingTop,
+                plotShadow: @Model.PlotShadow.ToString().ToLower(),
+                style: {
+                    fontFamily: "Arial, sans-serif"
+                },
+                @if (Model.ChartWidth > 0)
+                {
+                    <text>
+                        width: @Model.ChartWidth,
+                    </text>
+                }
+
+                @if (Model.ChartHeight > 0)
+                {
+                    <text>
+                        height: @Model.ChartHeight,
+                    </text>
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            @if(Model.ShowTitle)
+            {
+                <text>
+                    title: {
+                        text: '@Model.Title',
+                        style: {
+                            color: '@Model.TitleColor',
+                            fontFamily: 'Arial, sans-serif'
+                        }
+                    },
+                </text>
+            }
+            else
+            {
+                <text>
+                    title: {
+                        text: ''
+                    },
+                </text>
+            }
+            @if(Model.ShowSubTitle)
+            {
+                <text>
+                    subtitle: {
+                        text: '@Model.SubTitle',
+                        style: {
+                            color: '@Model.SubTitleColor',
+                            fontFamily: 'Arial, sans-serif'
+                        }
+                    },
+                </text>
+            }
+            xAxis: {
+                lineColor : '@Model.XAxisColor',
+                categories: categories_@Model.ContainerId,
+                crosshair: true,
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || '#555'
+                    }
+                },
+                @if (Model.HideXAxis)
+                {
+                    <text>
+                        labels: {
+                            enabled: false
+                        },
+                        lineWidth: 0,
+                        gridLineWidth: 0,
+                        minorGridLineWidth: 0,
+                        lineColor: 'transparent',
+                        minorTickLength: 0,
+                        tickLength: 0,
+                    </text>
+                }
+                @if (Model.HideGridLines)
+                {
+                    <text>
+                        gridLineWidth: 0,
+                        minorGridLineWidth: 0,
+                    </text>
+                }
+            },
+            yAxis: [
+            @if (!String.IsNullOrEmpty(Model.YAxis2Title))
+            {
+                <texT>
+                {
+                    lineColor: '@Model.YAxisColor',
+                    min: 0,
+                    title: {
+                        text: '@Model.YAxis2Title'
+                        },
+                    labels: {
+                        format: '@Model.YAxis2LabelFormat',
+                        style: {
+                            color: '@Model.YAxisColor'
+                        },
+                        },
+                    opposite: true,
+                },
+                 </texT>
+            }
+            {
+                lineColor : '@Model.YAxisColor',
+                min: 0,
+                title: {
+                    text: '@Model.YAxis1Title'
+                },
+                labels: {
+                    format: '@Model.YAxis1LabelFormat',
+                    style: {
+                        color: '@Model.YAxisColor'
+                    }
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'normal',
+                        color: '@Model.DataLabelColor'
+                    }
+                }
+            }],
+            tooltip: {
+                @*headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}@(Model.ShowPercentage ? "%" : String.Empty)</b></td></tr>',
+                footerFormat: '</table>',*@
+                @*headerFormat: '<span style="font-size:12px; padding-right: 5px;">{point.key}:</span>',
+                pointFormat: '<b>{point.y}@(Model.ShowPercentage ? "%" : String.Empty)</b>',
+                shared: true,
+                useHTML: true*@
+            },
+            exporting: {
+                enabled: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0,
+                    dataLabels: {
+                        enabled: @Model.ShowDataLabels.ToString().ToLower(),
+                        //color: '@Model.DataLabelColor',
+                        format: '{point.y}@(Model.ShowPercentage ? "%" : String.Empty)'
+                    }
+                },
+                row: {
+                    pointPadding: 0.2
+                },
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    borderWidth: 0,
+                    dataLabels: {
+                        enabled: @Model.ShowDataLabels.ToString().ToLower(),
+                        //color: '@Model.DataLabelColor',
+                        formatter: function () {
+                            @if (Model.ShowPercentage) {
+                                <text>return this.y + '%'</text>
+                            }
+                            else if (Model.ShowDollarSign)
+                            {
+                                <text>
+                                    nfObject = new Intl.NumberFormat('en-US');
+                                    return '$' + nfObject.format(this.y)
+                                </text>
+                            }
+                            else
+                            {
+                                <text>
+                                nfObject = new Intl.NumberFormat('en-US');
+                                return nfObject.format(this.y);
+                                </text>
+                            }
+                        }
+                    },
+                    point: {
+                        events: {
+                            click: function () {
+                                if (bms.applyFilter != undefined) {
+                                    bms.applyFilter({ column: '@Model.FilterDataColumn', value: this.category });
+                                }
+                            }
+                        }
+                    },
+                    pointWidth: @Model.PointWidth
+                }
+            },
+            legend: {
+                enabled: @Model.ShowLegend.ToString().ToLower(),
+                layout: '@Model.LegendLayout',
+                align: '@Model.LegendAlign',
+                verticalAlign: '@Model.LegendVerticalAlign',
+                floating: false,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false,
+            },
+            series: [
+                @foreach(var item in Model.DataSeries.Items)
+                {
+                    if (!String.IsNullOrEmpty(Model.YAxis2Title))
+                    {
+                        <text>
+                        {
+                            name: '@item.Name', @(item.yAxis == 1 ? "yAxis: 1," : String.Empty) data: [
+                        </text>
+                    }
+                    else
+                    {
+                        <text>{ name: '@item.Name', data: [</text>
+                    }
+
+
+                    for (var i = 0; i < item.Values.Count; i++)
+                    {
+                            <text>{name: '@Model.Categories[i]', y:@item.Values[i].Value, color: '@item.Values[i].Color'},</text>
+                        }
+
+                        <text>],
+
+                        @if (!String.IsNullOrEmpty(item.SerieType))
+                        {
+                            <text>type: '@item.SerieType',</text>
+                        }
+                            },
+                        </text>
+                }
+                ]
+        });
+    };
+
+    function defer@(Model.ContainerId)(method) {
+        if (window.jQuery && window.Highcharts != undefined) {
+            method();
+        }
+        else {
+            setTimeout(function () { defer@(Model.ContainerId)(method) }, 50);
+        }
+    }
+
+    defer@(Model.ContainerId)(bms.load_@Model.ContainerId);
+</script>
+
+<div id="@Model.ContainerId" class="multiColumnChart rbChart" style="width: 100%; height: 100%;">
+
+</div>
